@@ -1,5 +1,5 @@
 header{
-    padding: 20px 72px;
+    padding: 24.5px 72px;
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(11px);
     position: fixed;
@@ -7,6 +7,12 @@ header{
         left: 0;
         right: 0;
         z-index: 999;
+    @media (max-width: 1024px){
+        padding: 24.5px 24px;
+    }
+    @media (max-width: 767px){
+        padding: 16px 20px;
+    }
     
     .header-main{
         
@@ -38,12 +44,12 @@ header{
             .header-nav-main{
                 display: flex;
                 li:not(:first-child){
-                    margin-left: 90.75px;
+                    margin-left: 85px
     
                 }
             }
             .header-nav-sub{
-                margin-left: 90.75px;
+                margin-left: 85px;
                 display: flex;
                 align-items: center;
                 .header-search{
@@ -54,8 +60,58 @@ header{
                     height: 20px;
                 }
             }
+            @media (max-width: 1024px){
+                .header-nav-main{
+                    li:not(:first-child){
+                        margin-left: 32px
+        
+                    }
+                    
+                }
+                .header-nav-sub{
+                    margin-left: 32px;
+                    
+                }
+            }
+            @media (max-width: 767px){
+                .header-nav-main{
+                    display: block;
+                    position: absolute;
+                    top: 60px;
+                    left: 0;
+                    right: 0;
+                    max-height: 0;
+                    margin-left: 0;
+                    overflow: hidden;
+                    li{
+                        width: 100%;
+                        padding: 10px 10px;
+                        background: rgba(0, 0, 0, 0.6);;
+                        margin-left: 0;
+                        border-bottom: 1px white solid;
+
+                    }
+                    li:not(:first-child){
+                        margin-left: 0;
+                    }
+                }
+                .menu-show.header-nav-main{
+                    max-height: max-content;
+                }
+                .header-nav-sub{
+                    margin-left: 32px;
+                    
+                }
+            }
         }
     
         
+    }
+    .showmenu{
+        display: none;
+        @media (max-width: 767px){
+           display:inline;
+           margin-left: 15px;
+        }
     }
 }

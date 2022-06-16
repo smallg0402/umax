@@ -1,5 +1,5 @@
 header {
-  padding: 20px 72px;
+  padding: 24.5px 72px;
   background: rgba(0, 0, 0, 0.6);
   -webkit-backdrop-filter: blur(11px);
           backdrop-filter: blur(11px);
@@ -8,6 +8,18 @@ header {
   left: 0;
   right: 0;
   z-index: 999;
+}
+
+@media (max-width: 1024px) {
+  header {
+    padding: 24.5px 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  header {
+    padding: 16px 20px;
+  }
 }
 
 header .header-main {
@@ -58,11 +70,11 @@ header .header-main nav .header-nav-main {
 }
 
 header .header-main nav .header-nav-main li:not(:first-child) {
-  margin-left: 90.75px;
+  margin-left: 85px;
 }
 
 header .header-main nav .header-nav-sub {
-  margin-left: 90.75px;
+  margin-left: 85px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,5 +90,56 @@ header .header-main nav .header-nav-sub .header-search {
 header .header-main nav .header-nav-sub .header-search img {
   width: 20px;
   height: 20px;
+}
+
+@media (max-width: 1024px) {
+  header .header-main nav .header-nav-main li:not(:first-child) {
+    margin-left: 32px;
+  }
+  header .header-main nav .header-nav-sub {
+    margin-left: 32px;
+  }
+}
+
+@media (max-width: 767px) {
+  header .header-main nav .header-nav-main {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    margin-left: 0;
+    overflow: hidden;
+  }
+  header .header-main nav .header-nav-main li {
+    width: 100%;
+    padding: 10px 10px;
+    background: rgba(0, 0, 0, 0.6);
+    margin-left: 0;
+    border-bottom: 1px white solid;
+  }
+  header .header-main nav .header-nav-main li:not(:first-child) {
+    margin-left: 0;
+  }
+  header .header-main nav .menu-show.header-nav-main {
+    max-height: -webkit-max-content;
+    max-height: -moz-max-content;
+    max-height: max-content;
+  }
+  header .header-main nav .header-nav-sub {
+    margin-left: 32px;
+  }
+}
+
+header .showmenu {
+  display: none;
+}
+
+@media (max-width: 767px) {
+  header .showmenu {
+    display: inline;
+    margin-left: 15px;
+  }
 }
 /*# sourceMappingURL=header.css.map */
