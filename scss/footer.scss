@@ -1,0 +1,113 @@
+.footer-main {
+    background-color: #111111;
+    display: flex;
+    flex-wrap: wrap;
+    .footer-infro{
+        width:40.5%;
+        background-image: url("../img/pc_infro_bg.png");
+        padding: 68px 0 49px 91px;
+        .footer-infro-wrap{
+            width: 272px;
+            ul{
+                margin-top: 40px;
+                li{
+                    margin-top: 28.5px;
+                    a{
+                        display: flex;
+                        align-items: center;
+                        font-family: Heebo;
+                        font-size: 16px;
+                        line-height: 24px;
+                        letter-spacing: 0em;
+                        text-align: left;
+                        color: white;
+                        span{
+                            margin-left: 16px;
+                        }
+        
+                    }
+                }
+            }     
+        }
+    }
+    .footer-menu{
+        width: 59.5%;
+        // 為什麼搭配flex時padding使用%數會失準？
+        .footer-menu-wrap{
+            padding:68px 35.981308% 125px 23.364486%;
+            display: flex;
+            justify-content: space-between;
+            ul{
+                margin-top: 28px;
+                li:not(:first-child){
+                margin-top: 16px;
+                }
+            }
+            p{
+                color: #B3BFC8;
+            }
+        }
+
+        
+        
+
+        
+    }
+    @media (max-width: 1024px){
+        .footer-infro{
+            width:50%;
+            padding: 65px 18.345324% 56px 10.911271%;
+            .footer-infro-wrap{
+                width: 295px;
+                ul{
+                    margin-top: 28px;
+                    li{
+                        margin-top: 9px;
+                    }
+                }
+            }
+            
+        }
+        .footer-menu{
+            width:50%;
+             .footer-menu-wrap{
+            padding:41px 34.532374% 98px 32px;
+             } 
+        }
+    }
+    @media (max-width: 767px){
+        .footer-infro{
+            width:100%;
+            padding: 40px;
+            
+        }
+        .footer-menu{
+            width:100%;
+            .footer-menu-wrap{
+                padding:40px 29.015544% 66px 40px;
+            } 
+            
+        }
+    }
+}
+
+.footer-sub{
+    background-color: #000000;
+    padding-top: 33px;
+    padding-bottom: 47px;
+    text-align: center;  
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 14px;
+    letter-spacing: -0.015em;
+    @media (max-width: 1024px){
+        padding-left: 32px;
+        text-align: left;
+
+    }
+    @media (max-width: 767px){
+        padding: 20px;
+        text-align: center;
+    }
+
+}
