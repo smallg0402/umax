@@ -541,7 +541,7 @@ body {
   margin-left: -56px;
 }
 
-.home-product .product-diagram .product-diagram-img picture {
+.home-product .product-diagram .product-diagram-img picture, .home-product .product-diagram .product-diagram-img img {
   width: 100%;
   height: auto;
 }
