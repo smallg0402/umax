@@ -896,15 +896,22 @@ body {
 }
 
 .about-main .padding-main-left {
-  margin-top: -150px;
+  margin-top: -220px;
 }
 
 @media (max-width: 1024px) {
   .about-main {
-    background-position: top 360px left 90px,center center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
+    background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
   }
   .about-main .padding-main-left {
-    margin-top: -300px;
+    margin-top: -150px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-main .padding-main-left {
+    margin-top: -50px;
   }
 }
 
@@ -1111,6 +1118,7 @@ body {
   background: #001F3F;
   position: relative;
   z-index: 2;
+  padding-bottom: 150px;
 }
 
 .about-story .about-story-wrap {
@@ -1123,13 +1131,36 @@ body {
   margin-top: 20px;
 }
 
+@media (max-width: 1024px) {
+  .about-story {
+    padding-bottom: 120px;
+  }
+  .about-story .about-story-wrap {
+    margin-left: 0;
+  }
+  .about-story .about-story-wrap h2, .about-story .about-story-wrap p {
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-story {
+    padding-bottom: 90px;
+  }
+}
+
 .about-team {
-  padding-top: 176px;
+  padding-bottom: 150px;
   background-color: #001F3F;
 }
 
 .about-team .swiper {
   margin-top: 32px;
+  padding-bottom: 48px;
+}
+
+.about-team .swiper-slide img {
+  width: 100%;
 }
 
 .about-team .swiper-slide .team-name {
@@ -1138,9 +1169,20 @@ body {
   margin-bottom: 8px;
 }
 
+@media (max-width: 1024px) {
+  .about-team {
+    padding-bottom: 120px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-team {
+    padding-bottom: 90px;
+  }
+}
+
 .about-history {
   background-color: #001F3F;
-  padding-top: 176px;
 }
 
 .about-history .history-list {
@@ -1287,7 +1329,7 @@ body {
 
 @media (max-width: 1024px) {
   .about-history {
-    padding-bottom: 90px;
+    padding-bottom: 120px;
   }
   .about-history .history-list {
     max-width: 700px;
@@ -1306,6 +1348,10 @@ body {
     width: 2px;
     height: 100%;
     background: #58B9FF;
+  }
+  .about-history .history-list li:not(:first-child) .history-intro {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
   }
   .about-history .history-list .history-intro {
     width: 85%;
@@ -1327,6 +1373,12 @@ body {
   }
   .about-history .history-list .history-intro .history-content {
     margin-top: 28px;
+  }
+}
+
+@media (max-width: 767px) {
+  .about-history {
+    padding-bottom: 90px;
   }
 }
 
@@ -1381,6 +1433,13 @@ body {
     width: 100%;
     padding-top: 149px;
     padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .padding-about-inner {
+    padding-right: 40px;
+    padding-left: 40px;
   }
 }
 

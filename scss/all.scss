@@ -719,13 +719,20 @@ body{
     
 
     .padding-main-left{
-        margin-top: -150px;
+        margin-top: -220px;
 
     }
     @media (max-width: 1024px){
-        background-position: top 360px left 90px,center center;
+        background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
         .padding-main-left{
-            margin-top: -300px;
+            margin-top: -150px;
+            
+        }
+    }
+    @media (max-width: 767px){
+        .padding-main-left{
+            margin-top: -50px;
+            
         }
     }
 }
@@ -910,6 +917,7 @@ body{
     background: #001F3F;
     position: relative;
     z-index: 2;
+    padding-bottom: 150px;
     .about-story-wrap{
         position: relative;
         z-index: 2;
@@ -920,28 +928,54 @@ body{
         
         
     }
+    @media (max-width: 1024px){
+        padding-bottom: 120px;
+        .about-story-wrap{
+            margin-left: 0;
+            h2,p{
+                text-align: center;
+            }
+        }
+    }  
+    
+    @media (max-width: 767px){
+        padding-bottom: 90px;
+    }
 }
 
 .about-team{
-    padding-top: 176px;
+    padding-bottom: 150px;
     background-color: #001F3F;
+    
     .about-team-wrap{
         
     }
     .swiper{
         margin-top: 32px;
+        padding-bottom: 48px;
+        
     }
+    
     .swiper-slide{
+        img{
+            width: 100%;
+        }
         .team-name{
             font-weight: 700;
             margin-bottom: 16px;
             margin-bottom: 8px;
         }
     }
+    @media (max-width: 1024px){
+        padding-bottom: 120px;
+    }
+    @media (max-width: 767px){
+        padding-bottom: 90px;
+    }
+   
 }
 .about-history{
     background-color: #001F3F;
-    padding-top: 176px;
    
     .history-list{
         margin: 95px auto 0 auto;
@@ -1064,7 +1098,7 @@ body{
         }
     }
     @media (max-width: 1024px){
-        padding-bottom: 90px;
+        padding-bottom: 120px;
         .history-list{
             max-width: 700px;
             ul{
@@ -1085,6 +1119,11 @@ body{
                 background: #58B9FF;
     
             }
+            li:not(:first-child) .history-intro{
+                transform: translateY(-50%);
+            }
+
+            
             .history-intro{
                 width: 85%;
                 padding: 32px;
@@ -1111,6 +1150,10 @@ body{
         }
         
 
+    }
+    
+    @media (max-width: 767px){
+        padding-bottom: 90px;
     }
 }
 .about-bevel-storyTomore{
@@ -1169,6 +1212,11 @@ body{
     }
 }
 .padding-about-inner{
+    @media (max-width: 1024px){
+        padding-right: 40px;
+        padding-left: 40px;
+
+    }
     @media(max-width: 767px){
         padding-right: 28px;
         padding-left: 28px;
