@@ -424,7 +424,7 @@ body{
         .product-diagram-img{
             width: 52.514047%;
             margin-left: -56px;
-            picture,img{
+            img{
                 width: 100%;
                 height: auto;
             }
@@ -477,16 +477,14 @@ body{
                 
             }
             .product-diagram-img{
-                width: 82.85%;
+                width: 100%;
                 order: 1;
                 margin-left: auto;
                 margin-right: auto;
                 margin-bottom: 48.27px;
-                picture{
-                width: 100%;
-                height: auto;
+               
             }
-            }
+            
             .product-diagram-content{
                 padding: 20px;
                 order: 3;
@@ -713,9 +711,25 @@ body{
     }
 }
 
+.about-main{
+    background: url('../img/about_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+    background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
 
+    .padding-main-left{
+        margin-top: -150px;
+
+    }
+    @media (max-width: 1024px){
+        background-position: top 360px left 90px,center center;
+        .padding-main-left{
+            margin-top: -300px;
+        }
+    }
+}
 .about-banner{
-    background-color: #243E50;
     position: relative;
     z-index: 2;
     
@@ -876,33 +890,40 @@ body{
     }
 }
 
+.about-bevel-bannerTstory{
+    background: linear-gradient(to right bottom,rgba(0,0,0,0),rgba(0,0,0,0)50%,#001F3F 50% ,#001F3F);
+    height: 0;
+    padding-top: 21.841704%;
+    @media (max-width: 1440px){
+       
+    }
+    @media(max-width: 1024px){
+        height: 181px;
+        margin-top: 0px;
+    }
+    @media(max-width: 767px){
+        height: 82px;
+    }
+}
+
 .about-story{
+    background: #001F3F;
     position: relative;
     z-index: 2;
-    background: linear-gradient(to right bottom,rgba(0,0,0,0),rgba(0,0,0,0) 50%,#001F3F 50% ,#001F3F);
-    height: 283px;
-    margin-top: -200px;
-    padding-top: 150px;
     .about-story-wrap{
-        
         position: relative;
         z-index: 2;
         margin-left: 21.716021%;
-        padding: 100px 50px 0px 0px;
-        .font-section-title{
-            
-        }
         p{
             margin-top: 20px;
         }
         
         
     }
-
 }
 
 .about-team{
-    padding-top: 226px;
+    padding-top: 176px;
     background-color: #001F3F;
     .about-team-wrap{
         
@@ -921,6 +942,7 @@ body{
 .about-history{
     background-color: #001F3F;
     padding-top: 176px;
+   
     .history-list{
         margin: 95px auto 0 auto;
         position: relative;
@@ -1042,14 +1064,33 @@ body{
         }
     }
     @media (max-width: 1024px){
+        padding-bottom: 90px;
         .history-list{
-            max-width: 750px;
+            max-width: 700px;
+            ul{
+                display: block;
+                height: 615px;
+            }
+            li{
+                width: 100%;
+                height: 25%;
+            }
+
+            .history-line{
+                
+                top: 0px;
+                left: 0px;
+                width: 2px;
+                height: 100%;
+                background: #58B9FF;
+    
+            }
             .history-intro{
-                width: 441px;
-                padding: 16px;
+                width: 85%;
+                padding: 32px;
                 background: linear-gradient(0deg, #619BC6 0%, rgba(87, 117, 139, 0.85) 56.21%, rgba(70, 145, 200, 0) 129.1%, rgba(153, 194, 224, 0.8) 129.11%);
-                top: 45px;
-                left: 0;
+                top: 0px;
+                left: 45px;
                 span{
                     display: block;
                     font-family: Arial;
@@ -1065,9 +1106,72 @@ body{
                     margin-top: 28px;
                 }
             }
+
+            
         }
         
 
+    }
+}
+.about-bevel-storyTomore{
+    display: block;
+    
+    background: linear-gradient(to right bottom,#001F3F,#001F3F 50%,rgba(0,0,0,0) 50% ,rgba(0,0,0,0));
+    height: 0;
+    padding-top: 21.841704%;
+    
+    @media (max-width: 1440px){
+       
+    }
+    @media(max-width: 1024px){
+        height: 181px;
+        margin-top: 0px;
+    }
+    @media(max-width: 767px){
+        height: 82px;
+    }
+}
+.about-more{
+    margin-top: -310px;
+    background: url('../img/pc_about_more_bg.png');
+    background-size: cover;
+    padding: 378px 0 119px 202px;
+    .about-more-wrap{
+        width: 431px;
+    }
+    .button-more{
+        margin-top: 32px;
+    }
+    
+    @media(max-width: 1024px){
+        
+        .button-more{
+            margin-top: 24px;
+        }
+
+    }
+    @media(max-width: 768px){
+        
+        .more-infromation{
+    
+            
+           
+        }
+       
+    }
+    @media (max-width: 414px){
+        flex-wrap: wrap;
+        div{
+        width: 100%;
+        padding-top: 149px;
+        padding-bottom: 40px;
+        }
+    }
+}
+.padding-about-inner{
+    @media(max-width: 767px){
+        padding-right: 28px;
+        padding-left: 28px;
     }
 }
 

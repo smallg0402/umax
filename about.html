@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="css/header.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="css/all.css">
-    <title>About Us</title>
+    <title>About Us - UMAX</title>
 </head>
 <body>
     <header>
@@ -31,7 +31,7 @@
             </nav>
         </div>
     </header>
-    <main>
+    <main class="about-main">
         <section class="about-banner">
             <div class="about-banner-main">
                 <div class="about-banner-slogan">
@@ -45,14 +45,15 @@
                 </div>
             </div>
         </section>
-        <div class="about-menu">
+        <!-- <div class="about-menu">
             <ul class="about-menu-wrap">
                 <li><a href="">Our Story</a></li>
                 <li><a href="">Team</a></li>
                 <li><a href="">History</a></li>
             </ul>
-        </div>
-        <div class="padding-main-left" style="background-color: #243E50;">
+        </div> -->
+        <div class="padding-main-left">
+            <div class="about-bevel-bannerTstory"></div>
             <section class="about-story">
                 <div class="about-story-wrap">
                     <h2 class="font-section-title">Our Story</h2>
@@ -61,7 +62,7 @@
                 </div>
             </section>
             <section class="about-team">
-                <div class="about-team-wrap">
+                <div class="about-team-wrap padding-about-inner">
                     <h2 class="font-section-title align-center">Our Team</h2>
                     <div class="swiper">
                         <!-- Additional required wrapper -->
@@ -92,11 +93,11 @@
                     </div>  
                 </div>
             </section>
-            <section class="about-history">
+            <section class="about-history padding-about-inner">
                 <h2 class="font-section-title align-center">Our History</h2>
                 <div class="history-list">
                     <ul>
-                        <li class="active">
+                        <li class="history-list-item active">
                             <span class="history-dot"></span>
                             <span class="history-hoverdot"></span>
                             <span class="history-activedot"></span>
@@ -116,7 +117,7 @@
                                 </div>             
                             </div>
                         </li>
-                        <li>
+                        <li class="history-list-item">
                             <span class="history-dot"></span>
                             <span class="history-hoverdot"></span>
                             <span class="history-activedot"></span>
@@ -136,7 +137,7 @@
                                 </div>             
                             </div>
                         </li>
-                        <li>
+                        <li class="history-list-item">
                             <span class="history-dot"></span>
                             <span class="history-hoverdot"></span>
                             <span class="history-activedot"></span>
@@ -156,7 +157,7 @@
                                 </div>             
                             </div>
                         </li>
-                        <li>
+                        <li class="history-list-item">
                             <span class="history-dot"></span>
                             <span class="history-hoverdot"></span>
                             <span class="history-activedot"></span>
@@ -180,7 +181,17 @@
                     <span class="history-line"></span>
                 </div>
             </section>
+            <span class="about-bevel-storyTomore"></span>
         </div>
+        <section class="about-more">
+            <div class="about-more-wrap">
+            <p class="font-section-title">More infromation?</p>
+            <p class="font-text">We are committed to the research and development and innovation of vehicle-related products, with the goal of improving vehicle performance</p>
+            <a href="" class="button-more">Contact Us ></a>
+            </div>
+            
+        </section>
+        
     </main>
     <footer>
         <div class="footer-main d-flex">
@@ -267,6 +278,25 @@
        }
   
      });
+     let history_list_item = document.querySelectorAll('.history-list-item');
+     let history_dot = document.querySelectorAll('.history-dot');
+     history_dot.forEach(function(item,i){
+         
+         item.addEventListener('click',function(){
+             console.log('touch');
+             history_list_item.forEach(function(item){
+                 item.classList.remove("active");
+             })
+            history_list_item[i].setAttribute('class','active');
+         })
+
+     })
+     
+
+    
+     
+
+
        
     </script>
    
