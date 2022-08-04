@@ -63,6 +63,14 @@ header .header-main nav a {
   color: white;
 }
 
+header .header-main nav a:hover {
+  color: #4691C8;
+}
+
+header .header-main nav a:active {
+  color: #86CCFF;
+}
+
 header .header-main nav .header-nav-main {
   display: -webkit-box;
   display: -ms-flexbox;

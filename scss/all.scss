@@ -1,6 +1,7 @@
 body{
     font-size: 18px;
     color: white;
+    position: relative;
 }
 .padding-main-left{
     padding-left: 123px;
@@ -116,6 +117,12 @@ body{
     margin-top: 70px;
     color: white;
     display: inline-block;
+    text-decoration: none;
+    :hover{
+        color: #86CCFF;
+        border: 1px solid #86CCFF;
+
+    }
     
 }
 
@@ -126,7 +133,7 @@ body{
     @media (max-width: 767px){
         margin-top: 56px;
     }
-    background-color: #11222D;
+    
     .home-banner-content{    
         .home-banner-item{
             height: 731px; 
@@ -166,6 +173,7 @@ body{
                     font-size: 48px;
                     line-height: 55px;
                     text-align: center;
+                    white-space: normal;
                 }
                 p{
                     width: 61.191336%;
@@ -202,7 +210,6 @@ body{
     line-height: 110px;
     text-align:end;
     padding-left: 126px;
-    background: #11222D; 
     
     .slogan-block-wrap{
         height: 287px;
@@ -285,14 +292,21 @@ body{
     
 }
 .home-main{
-    background-color: #11222D;
-    .home-main-wrap{
-        padding-left: 126px;
-        @media (max-width:1024px){
-            padding-left: 0;
-        }
+    background: url('../img/pc_home_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+    background-position: top 462px left 90px,center center;
+    @media (max-width: 1439px){
+        background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: center center;
     }
 
+    
+
+}
+.home-main-wrap{
+    padding-left: 126px;
+    @media (max-width:1024px){
+        padding-left: 0;
+    }
 }
 .home-service{
     padding-top: 146px;
@@ -346,7 +360,7 @@ body{
         
     }
     @media (max-width: 767px){
-        padding-top: 60px;
+        padding-top: 120px;
         .home-service-items{
             margin-top: 56px;
             flex-direction: column;
@@ -357,6 +371,10 @@ body{
             }
             li:not(:nth-child(1)){
                 margin-top: 40px;
+            }
+            li:nth-child(2){
+                margin-right: 0;
+                margin-left: 0;
             }
         
         }
@@ -380,7 +398,7 @@ body{
         display: flex;
         li{
             width: 50%;
-            a{
+            a,p{
                 display: block;
                 width: 100%;
                 text-align: center;
@@ -388,7 +406,23 @@ body{
                 text-decoration: none;
                 padding-bottom: 12px;
                 border-bottom: 1px solid white;
+                
+
             }
+            p{
+                color: gray;
+                border-bottom: 1px solid gray;
+
+            }
+            a:hover{
+                color: #86CCFF;
+                border-bottom: 1px solid #86CCFF;
+            }
+            a:active{
+                color: #4691C8;
+                border-bottom: 1px solid #4691C8;
+            }
+           
         }
         
         @media (max-width: 1024px){
@@ -412,14 +446,18 @@ body{
             
         }
         .product-sub-menu a{
-            padding-right: 17px;
+            padding-right: 25px;
             padding-top: 13.92px;
             padding-bottom: 13.92px;
             color: white;
             text-decoration: none;
             text-align: right;
             display: block;
-            background: linear-gradient(265.16deg, #18537D 5.21%, rgba(24, 83, 125, 0.21) 105.19%);
+            background: linear-gradient(282deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 5% ,#18537D 5.21%, rgba(24, 83, 125, 0.21) 95%,rgba(0,0,0,0) 95%);
+            transition: 2s;
+        }
+        .product-sub-menu a:hover{
+            background: linear-gradient(282deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5%,#4691C8 5% ,rgba(132, 203, 255, 0.12) 95%,rgba(0,0,0,0) 95%);
         }
         .product-diagram-img{
             width: 52.514047%;
@@ -458,6 +496,12 @@ body{
                     line-height: 150%;
                     color: #4691C8;
                     margin-right: 44px;
+                }
+                a:hover{
+                    color: #86CCFF;
+                }
+                a:active{
+                    color: #4691C8;
                 }
             }
         }
@@ -602,10 +646,14 @@ body{
             font-weight: 300;
             letter-spacing: 0.025em;
             line-height: 26px;
+            a{
+                color: white;
+                text-decoration: none;
+            }
         }
         .news-item-tag{
             margin-top: 8px;
-            a{
+            span{
                 text-decoration: none;
                 font-family: 'Arial';
                 font-weight: 700;
@@ -616,6 +664,7 @@ body{
             }
         }
     }
+    
     @media (max-width: 1024px){
         .news-item{
             width: 48%;
@@ -656,7 +705,13 @@ body{
             margin-bottom: 32px;
         }
         .font-more-link{
+            color: #4691C8;
+            text-decoration: none;
             
+            
+        }
+        .font-more-link:hover{
+            color: #86CCFF;
         }
     }
     .about-slogan-block{
@@ -678,7 +733,7 @@ body{
     }
     
     @media (max-width: 1024px){
-        background-size: contain;
+        background-size: cover;
         background-position: right;
         background-image: url(../img/tb_home_about_bg.png);
         .home-about-main{
@@ -1011,10 +1066,10 @@ body{
             border: 8px solid #B9E2FF;
             border-radius: 13.5px;
             cursor: pointer;
+            z-index: 10;
             
         }
         .history-hoverdot{
-            display: none;
             position: absolute;
             top: -17.5px;
             left: -17.5px;
@@ -1024,6 +1079,10 @@ body{
             width: 35px;
             height: 35px;
             cursor: pointer;
+            animation-duration: 1.5s;
+            animation-name: dottwinkle;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
             
             
         }
@@ -1048,10 +1107,7 @@ body{
         }
         .active .history-hoverdot{
             display: inline-block;
-            animation-duration: 1.5s;
-            animation-name: dottwinkle;
-            animation-direction:alternate;
-            animation-iteration-count: infinite;
+            
            
         }
         .active .history-activedot{
@@ -1060,9 +1116,39 @@ body{
             animation-name: dottwinkle;
             animation-direction:alternate;
             animation-iteration-count: infinite;
+            
            
         }
         @keyframes dottwinkle {
+            from{
+                opacity: 0.2;
+
+            }
+            to{
+                opacity: 1;
+            }
+        }
+        .history-year{
+            display: none;
+            font-family: 'Roboto';
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            letter-spacing: -0.015em;
+            -webkit-text-stroke: 2px #B9E2FF;
+            -webkit-text-fill-color: transparent;
+            position: absolute;
+            top: -84px;
+            left: -51.5px;
+            animation-name: yeartwinkle;
+            animation-direction:alternate;
+            animation-iteration-count: infinite;
+            animation-duration: 1.5s;
+        }
+        .active .history-year{
+            display: inline-block;
+        }
+        @keyframes yeartwinkle {
             from{
                 opacity: 0.2;
 
@@ -1123,8 +1209,26 @@ body{
                 }
     
             }
-            li:not(:first-child) .history-intro{
+            li:last-child .history-intro{
                 transform: translateY(-50%);
+            }
+
+            .history-year{
+                font-size: 40px;
+                line-height: 56px;
+                letter-spacing: -0.015em;
+                -webkit-text-stroke: 2px #B9E2FF;
+                -webkit-text-fill-color: transparent;
+                position: absolute;
+                top: -65px;
+                left: 45px;
+                animation-name: yeartwinkle;
+                animation-direction:alternate;
+                animation-iteration-count: infinite;
+                animation-duration: 1.5s;
+            }
+            li:last-child .history-year{
+                top: -275px;
             }
 
             
@@ -1287,7 +1391,7 @@ body{
             }
         }
     }
-    @media (max-width: 414px){
+    @media (max-width: 767px){
         padding-top: 166px;
         background: 
     url('../img/pc_news_bgText.png'),
@@ -1407,7 +1511,7 @@ body{
         }
        
     }
-    @media (max-width: 414px){
+    @media (max-width: 767px){
         flex-wrap: wrap;
         div{
         width: 100%;
@@ -1416,11 +1520,25 @@ body{
         }
         .more-infromation{
             order: 2;
-            background: linear-gradient(171deg,#97A4AC 0% 14.9%,#64737D 14.9% 100%);
+            background: linear-gradient(176deg,#97A4AC 0% 14.9%,#64737D 14.9% 100%);
            
         }
         .more-about{
             order: 1;
+            background: linear-gradient(176deg,rgba(0,0,0,0) 0% 14.9%,#97A4AC 14.9% 100%);
+        
+        }
+        
+        
+    }
+    @media (max-width: 414px){
+        .more-infromation{
+          
+            background: linear-gradient(171deg,#97A4AC 0% 14.9%,#64737D 14.9% 100%);
+           
+        }
+        .more-about{
+           
             background: linear-gradient(171deg,rgba(0,0,0,0) 0% 14.9%,#97A4AC 14.9% 100%);
         
         }
@@ -1429,7 +1547,7 @@ body{
     }
 }
 .article-main{
-    padding-top: 152px;
+    padding-top: 140px;
     padding-bottom: 109px;
     padding-left: 90px;
     padding-right: 90px;
@@ -1472,7 +1590,16 @@ body{
 
    
 .article-back{
+    color: white;
+    text-decoration: none;
+    
+    :active{
+        color: #86CCFF;
+    }
+}
+.article-back:hover{
     color: #86CCFF;
+
 }
 .news-article{
     max-width: 1001px;
@@ -1640,6 +1767,9 @@ margin-top: 16px;
         padding: 16px; 
         color: white;
     }
+    select{
+        -webkit-appearance: none;
+    }
     #message{
         height: 136px;
     }
@@ -1793,7 +1923,7 @@ margin-top: 16px;
         margin-top: 56px;
         .products-banner-main{
             padding: 40px; 
-        height:480px;
+        height:360px;
         background-image: url("../img/mob_products_banner_bg.png");
         }
         
@@ -1853,7 +1983,7 @@ margin-top: 16px;
         display: flex;
         li{
             width: 50%;
-            a{
+            a,p{
                 display: block;
                 width: 100%;
                 text-align: center;
@@ -1861,6 +1991,18 @@ margin-top: 16px;
                 text-decoration: none;
                 padding-bottom: 12px;
                 border-bottom: 1px solid white;
+            }
+            a:hover{
+                color: #86CCFF;
+                border-bottom: 1px solid #86CCFF;
+            }
+            a:active{
+                color: #4691C8;
+                border-bottom: 1px solid #4691C8;
+            }
+            p{
+                color: gray;
+                border-bottom: 1px solid gray;
             }
         }
         
@@ -1894,6 +2036,7 @@ margin-top: 16px;
             text-decoration: none;
             text-align: right;
             display: block;
+
             background: linear-gradient(265.16deg, #18537D 5.21%, rgba(24, 83, 125, 0.21) 105.19%);
         }
         .product-diagram-img{

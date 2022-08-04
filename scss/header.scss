@@ -41,6 +41,13 @@ header{
                 text-decoration: none;
                 color: white;
             }
+            a:hover{
+                color: #4691C8;
+
+            }
+            a:active{
+                color: #86CCFF;
+            }
             .header-nav-main{
                 display: flex;
                 li:not(:first-child){
