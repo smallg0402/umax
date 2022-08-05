@@ -150,9 +150,10 @@ body {
   text-decoration: none;
 }
 
-.button-more :hover {
+.button-more:hover {
   color: #86CCFF;
   border: 1px solid #86CCFF;
+  text-decoration: none;
 }
 
 .home-banner {
@@ -294,7 +295,6 @@ body {
   .slogan-block .slogan-block-wrap p {
     -webkit-text-stroke: 3px #fff;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0px 4px 64px #000000;
   }
   .slogan-block .slogan-block-wrap p:nth-child(1) {
     margin-right: 33px;
@@ -311,7 +311,7 @@ body {
   .slogan-block {
     font-size: 40px;
     line-height: 46px;
-    margin-top: 0px;
+    margin-top: -50px;
   }
   .slogan-block .slogan-block-wrap {
     height: 82px;
@@ -320,7 +320,7 @@ body {
   .slogan-block .slogan-block-wrap p {
     -webkit-text-stroke: 3px #fff;
     -webkit-text-fill-color: transparent;
-    text-shadow: 0px 4px 64px #000000;
+    text-shadow: none;
   }
   .slogan-block .slogan-block-wrap p:nth-child(1) {
     margin-right: 20px;
@@ -696,6 +696,9 @@ body {
   .home-product .product-diagram .product-sub-menu a {
     padding-top: 24px;
     padding-bottom: 24px;
+    background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 13%, #18537D 13%, rgba(24, 83, 125, 0.21) 87%, rgba(0, 0, 0, 0) 87%);
+    padding-right: 18px;
+    font-size: 16p;
   }
   .home-product .product-diagram .product-diagram-img {
     width: 90%;
@@ -1173,6 +1176,7 @@ body {
 
 @media (max-width: 767px) {
   .about-bevel-bannerTstory {
+    padding-top: 0;
     height: 82px;
   }
 }
@@ -1525,6 +1529,7 @@ body {
 
 @media (max-width: 1024px) {
   .about-bevel-storyTomore {
+    padding-top: 0;
     height: 181px;
     margin-top: 0px;
   }
@@ -1597,6 +1602,7 @@ body {
 }
 
 .news-main .news-list {
+  margin-top: 0px;
   width: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
@@ -1604,10 +1610,7 @@ body {
 
 .news-main .news-list .news-item {
   width: 29.335634%;
-}
-
-.news-main .news-list .news-item:nth-child(n+4) {
-  margin-top: 96px;
+  margin-top: 74px;
 }
 
 .news-main .news-menu {
@@ -1620,14 +1623,18 @@ body {
 
 .news-main .news-menu li {
   width: 20%;
-}
-
-.news-main .news-menu li a {
   color: white;
   display: block;
   text-align: center;
   border-bottom: 1px solid white;
   padding-bottom: 12px;
+  cursor: pointer;
+}
+
+.news-main .news-menu li:hover {
+  text-decoration: none;
+  color: #4691C8;
+  border-bottom: 1px solid #4691C8;
 }
 
 @media (max-width: 1440px) {
@@ -2064,6 +2071,11 @@ body {
   border-radius: 50px;
   padding: 12px 20px;
   font-size: 20px;
+  cursor: pointer;
+}
+
+.contact-form .contact-form-btn:hover {
+  background: #86CCFF;
 }
 
 @media (max-width: 767px) {

@@ -34,84 +34,83 @@
         <section class="news-main-mainwrap">
             <h2 class="font-section-title align-center">News</h2>
             <ul class="news-menu">
-                <li><a href="">All</a></li>
-                <li><a href="">Announce</a></li>
-                <li><a href="">Report</a></li>
-                <li><a href="">All</a></li>
-                <li><a href="">All</a></li>
+                <li>All</li>
+                <li>Announce</li>
+                <li>Report</li>
+                <li>All</li>
+                <li>All</li>
             </ul>
             <ul class="news-list">
-                <li class="news-item">
+                <li class="news-item cateReport">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex1.png" alt=""></a>
                     <div class="news-item-attribute">
                         <span>Oct 22 , 2018</span>
-                        <span>30 views</span>
+                    
                     </div>
                     <h5 class="news-item-title"><a href="news_inner.html">50 Anniversary</a></h5>
                     <div class="news-item-tag">
                         <span href="">#Report</span>
-                        <span href="">#Annoce</span>
                     </div>
                 </li>
-                <li class="news-item">
+                <li class="news-item cateReport">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex2.png" alt=""></a>
                 <div class="news-item-attribute">
                     <span>Oct 22 , 2018</span>
-                    <span>30 views</span>
+                    
                 </div>
                 <h5 class="news-item-title"><a href="news_inner.html">50 Anniversary</a></h5>
                 <div class="news-item-tag">
                     <span href="">#Report</span>
-                    <span href="">#Annoce</span>
+                    
                 </div>
                 </li>
                 
-                <li class="news-item">
+                <li class="news-item cateReport">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex3.png" alt=""></a>
                    <div class="news-item-attribute">
                     <span>Oct 22 , 2018</span>
-                    <span>30 views</span>
+                    
                 </div>
                 <h5 class="news-item-title"><a href="news_inner.html">50 Anniversary</a></h5>
                 <div class="news-item-tag">
                     <span href="">#Report</span>
-                    <span href="">#Annoce</span>
+                    
                 </div>
                 </li>
-                <li class="news-item">
+                <li class="news-item cateAnnounce">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex1.png" alt=""></a>
                     <div class="news-item-attribute">
                         <span>Oct 22 , 2018</span>
-                        <span>30 views</span>
+                        
                     </div>
                     <h5 class="news-item-title"><a href="news_inner.html">50 Anniversary</a></h5>
                     <div class="news-item-tag">
-                        <span href="">#Report</span>
+                        
                         <span href="">#Annoce</span>
                     </div>
                 </li>
-                <li class="news-item">
+                <li class="news-item cateAnnounce">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex2.png" alt=""></a>
                 <div class="news-item-attribute">
                     <span>Oct 22 , 2018</span>
-                    <span>30 views</span>
+                   
                 </div>
                 <h5 class="news-item-title"><a href="news_inner.html">50 Anniversary</a></h5>
                 <div class="news-item-tag">
-                    <span href="">#Report</span>
-                    <span href="">#Annoce/span>
+                    
+                    <span href="">#Annoce</span>
                 </div>
                 </li>
                 
-                <li class="news-item">
+                <li class="news-item cateAnnounce">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex3.png" alt=""></a>
                    <div class="news-item-attribute">
                     <span>Oct 22 , 2018</span>
-                    <span>30 views</span>
+                   
                 </div>
                 <h5 class="news-item-title"><a href="news_inner.html">50 Anniversary</a></h5>
                 <div class="news-item-tag">
-                    <span href="">#Report</span>
+                    
                     <span href="">#Annoce</span>
                 </div>
                 </li>
@@ -196,6 +195,30 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="all.js"></script>
+    <script>
+        console.log( $('.news-menu li'));
+        $('.news-menu li').each(function(){
+            
+            $(this).click(function(){
+                $('.news-menu li').attr("style","colo: white;");
+                $(this).css("color","#86CCFF");
+                $(this).css("border-bottom","1px solid #86CCFF");
+                let value = $(this).text();
+                console.log(value);
+                $(".news-item").fadeOut(0);
+                
+                if(value == 'All'){
+                    console.log('all here');
+                    $(".news-item").fadeIn(1500);
+                }else{
+                    console.log('here');
+                    var cate = ".cate" + value;
+                    $('.cate'+ value).fadeIn(1500);
+                }
+
+            })
+        })
+    </script>
     
 </body>
 </html>
