@@ -17,6 +17,7 @@
                 <h1 class="logo"><a href="index.html">UMAX</a></h1>
                 <nav>
                     <ul class="header-nav-main">
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About us</a></li>
                         <li><a href="news.html">News</a></li>
                         <li><a href="products.html">Products</a></li>
@@ -40,8 +41,8 @@
                     </div>
                 </div>
             </section>
-            <div class="products-wrap" id="vcbs1" style="display: none;">
-              <section class="products-menu padding-tab">
+            <div class="products-wrap" id="products-vcbs1">
+              <section class="products-menu padding-tab" id="products-menu">
                 <h3 class="font-section-title align-center transX">Our Product</h3>
                 <ul class="product-main-menu transX">
                     <li><a href="" class="p-text">CBS</a></li>
@@ -49,9 +50,10 @@
                 </ul>
                 <div class="product-diagram">
                     <ul class="product-sub-menu">
-                        <li><a href="">VCBS-I</a></li>
-                        <li><a href="">VCBS-II</a></li>
-                        <li><a href="">HBS</a></li>
+                      <li class="active"><a href="#products-vcbs1">VCBS-I</a></li>
+                      <li><a href="#products-vcbs2">VCBS-II</a></li>
+                      <li><a href="#products-hbs2">HBS-2w</a></li>
+                      <li><a href="#products-hbs3">HBS-3w</a></li>
                     </ul>
                     <div class="product-diagram-img">
                         <picture>
@@ -61,7 +63,7 @@
                         </picture>
                     </div>
                     <div class="product-diagram-content">
-                        <h4 class="product-name">VCBS</h4>
+                        <h4 class="product-name">VCBS-I</h4>
                         <p class="product-intro font-text">An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
                     </div>
                 </div>
@@ -70,7 +72,7 @@
               <section class="products-schematicAndmodule">
                   <div class="products-schematic products-inner-padding">
                     <h2 class="font-section-title sm-align-center">VCBS-I Schematic</h2>
-                    <img class="schematic-img" src="img/20220714VCBS-2.gif" alt="">
+                    <img class="schematic-img" src="img/pc_schematic_vcbs1.gif" alt="">
                   </div>
                   <div class="products-module products-inner-padding">
                     <div class="module-content">
@@ -84,6 +86,7 @@
                     <div class="module-img">
                         <picture>
                             <source media="(min-width: 1025px)" srcset="../img/pc_products_module_vscbs1.png">
+                            <source media="(min-width: 768px)" srcset="../img/tb_products_module_vscbs1.png">
                             <img src="img/mob_products_module_vscbs1.png" alt="">
                         </picture>
                         
@@ -108,12 +111,12 @@
               <section class="products-features products-inner-padding">
                   <h2 class="font-section-title">Features and advantages</h2>
                   <div class="margin-featureTextblock">
-                    <p class="font-text">1.Wide range of ratio variation, the ratio curve can be optimized</p>
-                    <p class="font-text">2.Robustness : adaptable to the wear of rear brake shoes</p>
+                    <p class="font-sub-title">1.Wide range of ratio variation, the ratio curve can be optimized</p>
+                    <p class="font-sub-title">2.Robustness : adaptable to the wear of rear brake shoes</p>
                   </div>
                   <picture>
-                    <source media="(min-width: 1025px)" srcset="img/pc_products_feature_brake.png">
-                    <img src="img/mob_products_feature_brake.png" alt="">
+                    <source media="(min-width: 1025px)" srcset="img/pc_products_feature_distance.png">
+                    <img src="img/mob_products_feature_distance.png" alt="">
                   </picture>
                   <p class="margin-featureTextblock font-text">3.Less changes to the original car configuration</p>
                   <div class="margin-chart features-chart">
@@ -131,9 +134,9 @@
                       </div>
                   </div>
                   <div class="margin-featureTextblock">
-                    <p class="font-text">4.Great flexibility in matching different types of vehicles</p>
-                    <p class="font-text">5.Do not kick each other with left and right hands</p>
-                    <p class="font-text">6.First left and then right don't fail</p>
+                    <p class="font-sub-title">4.Great flexibility in matching different types of vehicles</p>
+                    <p class="font-sub-title">5.Do not kick each other with left and right hands</p>
+                    <p class="font-sub-title">6.First left and then right don't fail</p>
                   </div>
               </section>
               <div class="products-bevel-featuresTospecification"></div>
@@ -180,7 +183,7 @@
                 </section>
                 </div>
                 
-                <div class="products-wrap" id="vcbs2 " style="display: none;">
+                <div class="products-wrap" id="products-vcbs2 " style="display: none;">
                     <section class="products-menu padding-tab">
                       <h3 class="font-section-title align-center transX">Our Product</h3>
                       <ul class="product-main-menu transX">
@@ -189,19 +192,20 @@
                       </ul>
                       <div class="product-diagram">
                           <ul class="product-sub-menu">
-                              <li><a href="">VCBS-I</a></li>
-                              <li><a href="">VCBS-II</a></li>
-                              <li><a href="">HBS</a></li>
+                            <li class="active"><a href="#products-vcbs1">VCBS-I</a></li>
+                            <li><a href="#products-vcbs2">VCBS-II</a></li>
+                            <li><a href="#products-hbs2">HBS-2w</a></li>
+                            <li><a href="#products-hbs3">HBS-3w</a></li>
                           </ul>
                           <div class="product-diagram-img">
                               <picture>
-                                  <source media="(min-width: 1025px)" srcset="img/pc_products_menu_vcbs1.png">
-                                  <source media="(min-width: 768px)" srcset="img/tb_products_menu_vcbs1.png">
-                                  <img src="img/mob_products_menu_vcbs1.png" alt="">
+                                  <source media="(min-width: 1025px)" srcset="img/pc_products_menu_vcbs2.png">
+                                  <source media="(min-width: 768px)" srcset="img/tb_products_menu_vcbs2.png">
+                                  <img src="img/mob_products_menu_vcbs2.png" alt="">
                               </picture>
                           </div>
                           <div class="product-diagram-content">
-                              <h4 class="product-name">VCBS</h4>
+                              <h4 class="product-name">VCBS-II</h4>
                               <p class="product-intro font-text">An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
                           </div>
                       </div>
@@ -209,12 +213,12 @@
                     <div class="products-bevel-menuToschematic"></div>
                     <section class="products-schematicAndmodule">
                         <div class="products-schematic products-inner-padding">
-                          <h2 class="font-section-title sm-align-center">VCBS-I Schematic</h2>
-                          <img class="schematic-img" src="img/20220714VCBS-2.gif" alt="">
+                          <h2 class="font-section-title sm-align-center">VCBS-II Schematic</h2>
+                          <img class="schematic-img" src="img/pc_schematic_vcbs2.gif" alt="">
                         </div>
                         <div class="products-module products-inner-padding">
                           <div class="module-content">
-                              <h2 class="font-section-title sm-align-center">VCBS-I module</h2>
+                              <h2 class="font-section-title sm-align-center">VCBS-II module</h2>
                               <p class="font-text sm-align-center">When the right handle is pressed, the right total mercury oil pressure independently controls the front wheel calipers.</p>
                           </div>
                           <div class="module-description-mobUp">
@@ -223,8 +227,9 @@
                           </div>
                           <div class="module-img">
                               <picture>
-                                  <source media="(min-width: 1025px)" srcset="../img/pc_products_module_vscbs1.png">
-                                  <img src="img/mob_products_module_vscbs1.png" alt="">
+                                  <source media="(min-width: 1025px)" srcset="../img/pc_products_module_vscbs2.png">
+                                  <source media="(min-width: 768px)" srcset="../img/tb_products_module_vscbs2.png">
+                                  <img src="img/mob_products_module_vscbs2.png" alt="">
                               </picture>
                               
                           </div>
@@ -248,14 +253,14 @@
                     <section class="products-features products-inner-padding">
                         <h2 class="font-section-title">Features and advantages</h2>
                         <div class="margin-featureTextblock">
-                          <p class="font-text">1.Wide range of ratio variation, the ratio curve can be optimized</p>
-                          <p class="font-text">2.Robustness : adaptable to the wear of rear brake shoes</p>
+                          <p class="font-sub-title">1.Wide range of ratio variation, the ratio curve can be optimized</p>
+                          <p class="font-sub-title">2.Robustness : adaptable to the wear of rear brake shoes</p>
                         </div>
                         <picture>
                           <source media="(min-width: 1025px)" srcset="img/pc_products_feature_brake.png">
                           <img src="img/mob_products_feature_brake.png" alt="">
                         </picture>
-                        <p class="margin-featureTextblock font-text">3.Less changes to the original car configuration</p>
+                        <p class="margin-featureTextblock font-sub-title">3.Less changes to the original car configuration</p>
                         <div class="margin-chart features-chart">
                             <div>
                                 <picture>
@@ -271,21 +276,21 @@
                             </div>
                         </div>
                         <div class="margin-featureTextblock">
-                          <p class="font-text">4.Great flexibility in matching different types of vehicles</p>
-                          <p class="font-text">5.Do not kick each other with left and right hands</p>
-                          <p class="font-text">6.First left and then right don't fail</p>
+                          <p class="font-sub-title">4.Great flexibility in matching different types of vehicles</p>
+                          <p class="font-sub-title">5.Do not kick each other with left and right hands</p>
+                          <p class="font-sub-title">6.First left and then right don't fail</p>
                         </div>
                     </section>
                     <div class="products-bevel-featuresTospecification"></div>
                     <section class="products-specification">
-                      <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+                      <h2 class="font-section-title sm-align-center">VCBS-II-Specification</h2>
                       <picture>
-                      <source media="(min-width:1025px)" srcset="img/pc_products_specification_vcbs1.png" >
-                      <source media="(min-width:768px)" srcset="img/tb_products_specification_vcbs1.png" >
-                      <img src="img/mob_products_specification_vcbs1.png" alt="">
+                      <source media="(min-width:1025px)" srcset="img/pc_products_specification_vcbs2.png" >
+                      <source media="(min-width:768px)" srcset="img/tb_products_specification_vcbs2.png" >
+                      <img src="img/mob_products_specification_vcbs2.png" alt="">
                       </picture>
                       <div>
-                          <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+                          <h2 class="font-section-title sm-align-center">VCBS-II-Specification</h2>
                           <table class="font-text products-specification-table">
                               <tbody>
                                   <tr>
@@ -320,7 +325,7 @@
               </section>
               
             </div>
-            <div class="products-wrap" id="hbs2">
+            <div class="products-wrap" id="products-hbs2" style="display: none;">
                 <section class="products-menu padding-tab">
                   <h3 class="font-section-title align-center transX">Our Product</h3>
                   <ul class="product-main-menu transX">
@@ -329,19 +334,20 @@
                   </ul>
                   <div class="product-diagram">
                       <ul class="product-sub-menu">
-                          <li><a href="">VCBS-I</a></li>
-                          <li><a href="">VCBS-II</a></li>
-                          <li><a href="">HBS</a></li>
+                        <li class="active"><a href="#products-vcbs1">VCBS-I</a></li>
+                        <li><a href="#products-vcbs2">VCBS-II</a></li>
+                        <li><a href="#products-hbs2">HBS-2w</a></li>
+                        <li><a href="#products-hbs3">HBS-3w</a></li>
                       </ul>
                       <div class="product-diagram-img">
                           <picture>
-                              <source media="(min-width: 1025px)" srcset="img/pc_products_menu_vcbs1.png">
-                              <source media="(min-width: 768px)" srcset="img/tb_products_menu_vcbs1.png">
-                              <img src="img/mob_products_menu_vcbs1.png" alt="">
+                              <source media="(min-width: 1025px)" srcset="img/pc_products_menu_hbs.png">
+                              <source media="(min-width: 768px)" srcset="img/tb_products_menu_hbs.png">
+                              <img src="img/mob_products_menu_hbs.png" alt="">
                           </picture>
                       </div>
                       <div class="product-diagram-content">
-                          <h4 class="product-name">VCBS</h4>
+                          <h4 class="product-name">HBS-2wheels</h4>
                           <p class="product-intro font-text">An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
                       </div>
                   </div>
@@ -349,22 +355,19 @@
                 <div class="products-bevel-menuToschematic"></div>
                 <section class="products-schematicAndmodule">
                     <div class="products-schematic products-inner-padding">
-                      <h2 class="font-section-title sm-align-center">VCBS-I Schematic</h2>
-                      <img class="schematic-img" src="img/20220714VCBS-2.gif" alt="">
+                      <h2 class="font-section-title sm-align-center">HBS-2wheels Schematic</h2>
+                      <img class="schematic-img" src="img/pc_schematic_hbs2.gif" alt="">
                     </div>
-                    <div class="products-module products-inner-padding">
+                    <div class="products-module products-inner-padding  module-hbs">
                       <div class="module-content">
-                          <h2 class="font-section-title sm-align-center">VCBS-I module</h2>
+                          <h2 class="font-section-title sm-align-center">HBS module</h2>
                           <p class="font-text sm-align-center">When the right handle is pressed, the right total mercury oil pressure independently controls the front wheel calipers.</p>
-                      </div>
-                      <div class="module-description-mobUp">
-                          <p class="font-description-title color-second">HPV<span>Pressure Relief Valve</span></p>
-                          <p class="font-text">When pressing the left handle, the braking force of the front and rear wheels is distributed according to the pressing force of the handle</p>
                       </div>
                       <div class="module-img">
                           <picture>
-                              <source media="(min-width: 1025px)" srcset="../img/pc_products_module_vscbs1.png">
-                              <img src="img/mob_products_module_vscbs1.png" alt="">
+                              <source media="(min-width: 1025px)" srcset="img/pc_products_module_hbs.png">
+                              <source media="(min-width: 768px)" srcset="img/tb_products_module_hbs.png">
+                              <img src="img/mob_products_module_hbs.png" alt="">
                           </picture>
                           
                       </div>
@@ -377,10 +380,7 @@
                               <p class="font-description-title color-second">HPV<span>Pressure Relief Valve</span></p>
                               <p class="font-text">When pressing the left handle, the braking force of the front and rear wheels is distributed according to the pressing force of the handle</p>
                           </div>
-                          <div class="description-second">
-                              <p class="font-description-title color-second">BFD<span>Pressure Relief Valve</span></p>
-                              <p class="font-text">When the left handle is pressed, the front wheel brake oil pressure is generated</p>
-                          </div>
+                          
                       </div>
                     </div>
                 </section>
@@ -388,14 +388,14 @@
                 <section class="products-features products-inner-padding">
                     <h2 class="font-section-title">Features and advantages</h2>
                     <div class="margin-featureTextblock">
-                      <p class="font-text">1.Wide range of ratio variation, the ratio curve can be optimized</p>
-                      <p class="font-text">2.Robustness : adaptable to the wear of rear brake shoes</p>
+                      <p class="font-sub-title">1.Wide range of ratio variation, the ratio curve can be optimized</p>
+                      <p class="font-sub-title">2.Robustness : adaptable to the wear of rear brake shoes</p>
                     </div>
                     <picture>
-                      <source media="(min-width: 1025px)" srcset="img/pc_products_feature_brake.png">
-                      <img src="img/mob_products_feature_brake.png" alt="">
+                      <source media="(min-width: 1025px)" srcset="img/pc_products_feature_distance.png">
+                      <img src="img/mob_products_feature_distance.png" alt="">
                     </picture>
-                    <p class="margin-featureTextblock font-text">3.Less changes to the original car configuration</p>
+                    <p class="margin-featureTextblock font-sub-title">3.Less changes to the original car configuration</p>
                     <div class="margin-chart features-chart">
                         <div>
                             <picture>
@@ -411,21 +411,21 @@
                         </div>
                     </div>
                     <div class="margin-featureTextblock">
-                      <p class="font-text">4.Great flexibility in matching different types of vehicles</p>
-                      <p class="font-text">5.Do not kick each other with left and right hands</p>
-                      <p class="font-text">6.First left and then right don't fail</p>
+                      <p class="font-sub-title">4.Great flexibility in matching different types of vehicles</p>
+                      <p class="font-sub-title">5.Do not kick each other with left and right hands</p>
+                      <p class="font-sub-title">6.First left and then right don't fail</p>
                     </div>
                 </section>
                 <div class="products-bevel-featuresTospecification"></div>
                 <section class="products-specification">
-                  <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+                  <h2 class="font-section-title sm-align-center">HBS Specification</h2>
                   <picture>
-                  <source media="(min-width:1025px)" srcset="img/pc_products_specification_vcbs1.png" >
-                  <source media="(min-width:768px)" srcset="img/tb_products_specification_vcbs1.png" >
-                  <img src="img/mob_products_specification_vcbs1.png" alt="">
+                  <source media="(min-width:1025px)" srcset="img/pc_products_specification_hbs.png" >
+                  <source media="(min-width:768px)" srcset="img/tb_products_specification_hbs.png" >
+                  <img src="img/mob_products_specification_hbs.png" alt="">
                   </picture>
                   <div>
-                      <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+                      <h2 class="font-section-title sm-align-center">HBS Specification</h2>
                       <table class="font-text products-specification-table">
                           <tbody>
                               <tr>
@@ -460,6 +460,140 @@
           </section>
           
         </div>
+        <div class="products-wrap" id="products-hbs3" style="display: none;">
+            <section class="products-menu padding-tab">
+              <h3 class="font-section-title align-center transX">Our Products</h3>
+              <ul class="product-main-menu transX">
+                  <li><a href="" class="p-text">CBS</a></li>
+                  <li><p href="" class="p-text" >Comming Soon...</p></li>
+              </ul>
+              <div class="product-diagram">
+                  <ul class="product-sub-menu">
+                      <li class="active"><a href="#products-vcbs1">VCBS-I</a></li>
+                      <li><a href="#products-vcbs2">VCBS-II</a></li>
+                      <li><a href="#products-hbs2">HBS-2w</a></li>
+                      <li><a href="#products-hbs3">HBS-3w</a></li>
+                  </ul>
+                  <div class="product-diagram-img">
+                      <picture>
+                          <source media="(min-width: 1025px)" srcset="img/pc_products_menu_hbs.png">
+                          <source media="(min-width: 768px)" srcset="img/tb_products_menu_hbs.png">
+                          <img src="img/mob_products_menu_hbs.png" alt="">
+                      </picture>
+                  </div>
+                  <div class="product-diagram-content">
+                      <h4 class="product-name">HBS-3wheels</h4>
+                      <p class="product-intro font-text">An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
+                  </div>
+              </div>
+            </section>
+            <div class="products-bevel-menuToschematic"></div>
+            <section class="products-schematicAndmodule">
+                <div class="products-schematic products-inner-padding">
+                  <h2 class="font-section-title sm-align-center">HBS-3wheels Schematic</h2>
+                  <img class="schematic-img" src="img/pc_schematic_hbs3.gif" alt="">
+                </div>
+                <div class="products-module products-inner-padding module-hbs">
+                  <div class="module-content">
+                      <h2 class="font-section-title sm-align-center">HBS module</h2>
+                      <p class="font-text sm-align-center">When the right handle is pressed, the right total mercury oil pressure independently controls the front wheel calipers.</p>
+                  </div>
+                  <div class="module-img">
+                      <picture>
+                          <source media="(min-width: 1025px)" srcset="../img/pc_products_module_hbs.png">
+                          <source media="(min-width: 768px)" srcset="../img/tb_products_module_hbs.png">
+                          <img src="img/mob_products_module_hbs.png" alt="">
+                      </picture>
+                      
+                  </div>
+                  <div class="module-description-mobBottom">
+                      <p class="font-description-title color-second">BFD<span>Pressure Relief Valve</span></p>
+                      <p class="font-text">When the left handle is pressed, the front wheel brake oil pressure is generated</p>
+                  </div>
+                  <div class="module-description">
+                      <div>
+                          <p class="font-description-title color-second">HPV<span>Pressure Relief Valve</span></p>
+                          <p class="font-text">When pressing the left handle, the braking force of the front and rear wheels is distributed according to the pressing force of the handle</p>
+                      </div>
+                  </div>
+                </div>
+            </section>
+            <div class="products-bevel-moduleTofeatures"></div>
+            <section class="products-features products-inner-padding">
+                <h2 class="font-section-title">Features and advantages</h2>
+                <div class="margin-featureTextblock">
+                  <p class="font-sub-title">1.Wide range of ratio variation, the ratio curve can be optimized</p>
+                  <p class="font-sub-title">2.Robustness : adaptable to the wear of rear brake shoes</p>
+                </div>
+                <picture>
+                  <source media="(min-width: 1025px)" srcset="img/pc_products_feature_distance.png">
+                  <img src="img/mob_products_feature_distance.png" alt="">
+                </picture>
+                <p class="margin-featureTextblock font-sub-title">3.Less changes to the original car configuration</p>
+                <div class="margin-chart features-chart">
+                    <div>
+                        <picture>
+                          <source media="(min-width: 1025px)" srcset="img/pc_products_feature_force_chart.png">
+                          <img src="img/mob_products_feature_force_chart.png" alt="">
+                        </picture>
+                    </div>
+                    <div>
+                      <picture>
+                          <source media="(min-width: 1025px)" srcset="img/pc_products_feature_force_description.png">
+                          <img src="img/mob_products_feature_force_description.png" alt="">
+                        </picture>  
+                    </div>
+                </div>
+                <div class="margin-featureTextblock">
+                  <p class="font-sub-title">4.Great flexibility in matching different types of vehicles</p>
+                  <p class="font-sub-title">5.Do not kick each other with left and right hands</p>
+                  <p class="font-sub-title">6.First left and then right don't fail</p>
+                </div>
+            </section>
+            <div class="products-bevel-featuresTospecification"></div>
+            <section class="products-specification">
+              <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+              <picture>
+              <source media="(min-width:1025px)" srcset="img/pc_products_specification_hbs.png" >
+              <source media="(min-width:768px)" srcset="img/tb_products_specification_hbs.png" >
+              <img src="img/mob_products_specification_hbs.png" alt="">
+              </picture>
+              <div>
+                  <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+                  <table class="font-text products-specification-table">
+                      <tbody>
+                          <tr>
+                              <th>Size (LxWxH)</td>
+                              <td>120 mm × 57 mm × 28 mm</td>
+                          </tr>
+                          <tr>
+                            <th>Variation range of front and rear brake force ratio</td>
+                            <td>F/R：0/100~55/45
+                                (Optimized according to different target vehicles)</td>
+                          </tr>
+                          <tr>
+                            <th>Modular power efficiency</td>
+                            <td>Single power transmission> 80% </td>
+                          </tr>
+                          <tr>
+                            <th rowspan="2">Estimated deceleration of L3 class vehicles</td>
+                            <td>Left handle input force ≥ 200N, Deceleration ≥ 5.9m/s2
+                                <span>(The maximum deceleration varies according to the specifications of the target car. The legal standard: deceleration ≥ 5.1m/s2)) (different depending on the target car)</span>
+                            </td>
+                          </tr>
+                          <tr>
+
+                            <td>The front wheel brake is disconnected, and the vehicle deceleration ≥ 3.1m/s2
+                                <span>(Regulatory standard: deceleration ≥ 2.9m/s2)) (depending on the target vehicle)</span>
+                            </td>
+                          </tr>
+
+                      </tbody>
+                  </table>
+              </div>
+      </section>
+      
+    </div>
               <!-- <section class="products-more">
                 <div>
                   <h2 class="font-section-title">About VCBS-II</h2>
@@ -528,6 +662,29 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
         <script type="text/javascript" src="all.js"></script>
+        <script>
+            let products_wrap_item = document.querySelectorAll('.products-wrap');
+            let all_submenu_item = document.querySelectorAll('.product-sub-menu li');
+            products_wrap_item.forEach(function(wrap_item,i){
+            let submenu_item = wrap_item.querySelectorAll('.product-sub-menu li');
+            submenu_item.forEach(function(menu_item,menu_i){
+                menu_item.addEventListener('click',function(e){
+                    all_submenu_item.forEach(function(item){
+                        item.classList.remove('active');
+                    })
+                    
+                    products_wrap_item.forEach(function(item,i){
+                        item.setAttribute('style','display: none');
+                        let submenu_item_sub = item.querySelectorAll('.product-sub-menu li');
+                        submenu_item_sub[menu_i].classList.add('active');
+
+                    })
+                    products_wrap_item[menu_i].setAttribute('style','display: block');
+                    
+                })
+            })
+            })
+        </script>
     
 </body>
 </html>
