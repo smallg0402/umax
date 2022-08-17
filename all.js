@@ -7,3 +7,7 @@ showmenu.addEventListener('click',function(){
         header_nav_main.classList.remove('menu-show');
     }
 })
+
+$('.carousel').carousel({
+    interval: 2000
+  })

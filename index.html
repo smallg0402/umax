@@ -18,6 +18,7 @@
             <h1 class="logo"><a href="index.html">UMAX</a></h1>
             <nav>
                 <ul class="header-nav-main">
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About us</a></li>
                     <li><a href="news.html">News</a></li>
                     <li><a href="products.html">Products</a></li>
@@ -25,7 +26,6 @@
                 </ul>
                 <div class="header-nav-sub">
                     <a href="index-ch.html">中文</a>
-                   
                 </div>
                 <a href="#" class="showmenu"><img src="img/nav-menu.png" alt=""></a>
             </nav>
@@ -33,7 +33,7 @@
     </header>
     
     <main class="home-main">
-        <div class="home-banner carousel slide carousel-fade" data-ride="carousel">
+        <div class="home-banner carousel slide carousel-fade" data-ride="carousel" id="homebannerCarousel">
             <div class="home-banner-content carousel-inner">
                 <div class="home-banner-item carousel-item active" id="home_banner_innovation">
                     <picture>
@@ -70,11 +70,11 @@
                     </div>
                 </div>
             </div>    
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#homebannerCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
               </a>
-              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+              <a class="carousel-control-next" href="#homebannerCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
               </a>
@@ -96,7 +96,7 @@
                                 <source media="(min-width: 768px)" srcset="img/tb_service_icon_commission.png">
                                 <img src="img/mob_service_icon_commission.png" alt="">
                             </picture>
-                            <p class="align-center font-text">Original Brand<br>Manufacture/OBM</p>
+                            <p class="align-center font-text">OBM</p>
                         </li>
                         <li>
                             <picture>
@@ -104,7 +104,7 @@
                                 <source media="(min-width: 768px)" srcset="img/tb_service_icon_collaboration.png">
                                 <img src="img/mob_service_icon_collaboration.png" alt="">
                             </picture>
-                            <p class="align-center font-text">Original Design<br>Manufactures/ODM</p>
+                            <p class="align-center font-text">ODM</p>
                         </li>
                         <li>
                             <picture>
@@ -138,21 +138,21 @@
                         </div>
                         <div class="product-diagram-content">
                             <div class="diagram-content-item">
-                                <h4 class="product-name">VCBS-I</h4>
+                                <h4 class="product-name"><a href="products.html#products-vcbs1">VCBS-I</a></h4>
                                 <p class="product-intro font-text">VCBS: An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
                             </div>
                             <div class="diagram-content-item" style="display: none;">
-                                <h4 class="product-name">VCBS-II</h4>
+                                <h4 class="product-name"><a href="products.html#products-vcbs2">VCBS-II</a></h4>
                                 <p class="product-intro font-text">VCBS: An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.
                                 </p>
                             </div>
                             <div class="diagram-content-item" style="display: none;">
-                                <h4 class="product-name">HBS-2wheels</h4>
+                                <h4 class="product-name"><a href="products.html#products-hbs2">HBS-2wheels</a></h4>
                                 <p class="product-intro font-text">HBS: An innovative hydraulic valve design for disc-disc braking system provides optimized brake force distribution ratio to have excellent brake performance and brake feels.
                                 </p>
                             </div>
                             <div class="diagram-content-item" style="display: none;">
-                                <h4 class="product-name">HBS-3wheels</h4>
+                                <h4 class="product-name"><a href="products.html#products-hbs3">HBS-3wheels</a></h4>
                                 <p class="product-intro font-text">HBS: An innovative hydraulic valve design for disc-disc braking system provides optimized brake force distribution ratio to have excellent brake performance and brake feels.
                                 </p>
                             </div>
@@ -191,7 +191,7 @@
                         </li>
                         
                         <li class="news-item">
-                            <a href="news_inner.html" class="news-simple-img"><img src="img/news-item-simple-img-ex1.png" alt=""></a>
+                            <a href="news_inner.html" class="news-simple-img"><img src="img/news_photo_kymco.png" alt=""></a>
                            <div class="news-item-attribute">
                             <span>JAN 27 , 2022</span>
                         </div>
@@ -204,7 +204,7 @@
                         
                     </ul>
                     <div class="d-flex justify-content-center">
-                        <a href="" class="button-more transX">View more ></a>
+                        <a href="news.html" class="button-more transX">View more ></a>
                     </div>
                 </div>
                 </section>
@@ -286,6 +286,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     <script type="text/javascript" src="all.js"></script>
     <script>
+        $('.carousel').carousel({
+          interval: 5000
+         })
         let diagram_img_item = document.querySelectorAll('.diagram-img-item');
         let diagram_content_item = document.querySelectorAll('.diagram-content-item');
         let home_product_submenu_item  = document.querySelectorAll('.home-product-submenu-item'); 

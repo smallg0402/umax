@@ -311,7 +311,8 @@ body{
 }
 .home-main{
     background: url('../img/pc_home_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
-    background-position: top 462px left 90px,center center;
+    background-position: top 430px left 90px,center center;
+    background-size: cover,auto;
     @media (max-width: 1439px){
         background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
         background-position: center center;
@@ -808,6 +809,10 @@ body{
         margin-top: -220px;
 
     }
+    @media (max-width: 1439px){
+        background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: center center;
+    }
     @media (max-width: 1024px){
         background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
         .padding-main-left{
@@ -829,9 +834,6 @@ body{
     .about-banner-main{
         background-image: url("../img/pc_about_banner_bg.png");
         background-size: 100% 100%;
-        @media (max-width: 1440px){
-            background-size: cover;
-        }
         position: relative;
         z-index: 1;
         height:668px;
@@ -845,6 +847,9 @@ body{
        font-size: 96px;
        font-family: 'Arial', 'Helvetica', sans-serif;
        font-style: italic;
+       -webkit-text-stroke: 3px #fff;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0px 4px 64px #000000;
        line-height: 110px;
        letter-spacing: -0.04em;
        
@@ -986,11 +991,7 @@ body{
 
 .about-bevel-bannerTstory{
     background: linear-gradient(to right bottom,rgba(0,0,0,0),rgba(0,0,0,0)50%,#001F3F 50% ,#001F3F);
-    height: 0;
-    padding-top: 21.841704%;
-    @media (max-width: 1440px){
-       
-    }
+    height: 287px;
     @media(max-width: 1024px){
         height: 181px;
         margin-top: 0px;
@@ -1365,11 +1366,13 @@ body{
     linear-gradient(180deg, #081822 0%, #3F5462 100%);
     background-position: center top -103px,center top,center center;
     background-repeat:no-repeat;
-    
     padding-top: 249px;
+    
+    
     .news-main-mainwrap{
         margin-left: max(161px);
         margin-right: max(120px);
+        padding-bottom: 133px;
        
     }
     .news-list{
@@ -1385,10 +1388,10 @@ body{
     }
     .news-menu{
         margin: 32px auto 0px auto;
-        width: 830px;
+        width: 498px;
         display: flex;
         li{
-            width: 20%;
+            width: 33.33333333%;
             color: white;
             display: block;
             text-align: center;
@@ -1465,16 +1468,26 @@ body{
 
 }
 
+.no-result-block{
+    margin-top: 74px;
+    
+}
+
 .section-news-more{
     display: flex;
-    div{
+    >div{
         width: 50%;
         padding-top: 318px;
         padding-bottom: 87px;
-        padding-left: 11.666667%;
-        padding-right: 135px;
+        
     }
     .more-infromation{
+        
+        >div{
+            max-width: 431px;
+            margin: 0 auto;
+        }
+        
         background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 38%,#64737D 38% 100%);
         p:nth-child(2){
             margin-top: 20px;
@@ -1483,6 +1496,10 @@ body{
        
     }
     .more-about{
+        >div{
+            max-width: 431px;
+            margin: 0 auto;
+        }
         
         background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 20%,#97A4AC 20% 100%);
         
@@ -1501,20 +1518,38 @@ body{
     }
     @media(max-width: 1440px){
         .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 37%,#64737D 37% 100%);
+        }
+
+    }
+    @media(max-width: 1280px){
+        .more-infromation{
             background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 36%,#64737D 36% 100%);
         }
 
     }
+    @media(max-width: 1200px){
+        .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 35%,#64737D 35% 100%);
+        }
+
+    }
+    @media(max-width: 1100px){
+        .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 34%,#64737D 34% 100%);
+        }
+
+    }
     @media(max-width: 1024px){
-        div{
+        >div{
             padding-top: 204px;
             padding-bottom: 87px;
-            padding-left: 47px;
-            padding-right: 47px;
-
         }
 
         .more-infromation{
+            >div{
+                max-width: 340px;
+            }
             
             background: linear-gradient(171deg,rgba(0,0,0,0) 0% 28%,#64737D 28% 100%);
             p:nth-child(2){
@@ -1524,6 +1559,9 @@ body{
            
         }
         .more-about{
+            >div{
+                max-width: 340px;
+            }
             background: linear-gradient(171deg,rgba(0,0,0,0) 0% 14.9%,#97A4AC 14.9% 100%);
             
             p:nth-child(2){
@@ -1538,6 +1576,13 @@ body{
         }
 
     }
+    @media(max-width: 900px){
+        .more-infromation{
+            background: linear-gradient(171deg,rgba(0,0,0,0) 0% 27.2%,#64737D 27.2% 100%);
+            
+        }
+
+    }
     @media(max-width: 768px){
         
         .more-infromation{
@@ -1549,17 +1594,25 @@ body{
     }
     @media (max-width: 767px){
         flex-wrap: wrap;
-        div{
+        >div{
         width: 100%;
         padding-top: 149px;
         padding-bottom: 40px;
+        padding-right: 20px;
+        padding-left: 20px;
         }
         .more-infromation{
+            >div{
+                max-width: 100%;
+            }
             order: 2;
             background: linear-gradient(176deg,#97A4AC 0% 14.9%,#64737D 14.9% 100%);
            
         }
         .more-about{
+            >div{
+                max-width: 100%;
+            }
             order: 1;
             background: linear-gradient(176deg,rgba(0,0,0,0) 0% 14.9%,#97A4AC 14.9% 100%);
         
@@ -1706,42 +1759,29 @@ backdrop-filter: blur(4px);
 
 .contact-main{
     padding-top: 261px;
-    padding-bottom: 109px;
-    padding-left: 90px;
-    padding-right: 90px;
     background: 
     url('../img/pc_news_bgVector.png'),
-    url('../img/pc_contact_bgPhoto.png'),
     linear-gradient(180deg, #081822 0%, #3F5462 100%);
-    background-position: left 90px top -103px,right bottom,center center;
+    background-position: left 90px top -103px,center center;
     background-repeat:no-repeat;
     @media (max-width: 1399px){
-        background-position: left 60px top -103px,right bottom,center center;
-        padding-left: 60px;
-        padding-right: 60px;
+        background-position: left 60px top -103px,center center;
     }
     @media (max-width: 1279px){
-        background-position: left 40px top -103px,right bottom,center center;
-        padding-left: 40px;
-        padding-right: 40px;
+        background-position: left 40px top -103px,center center;
+
     }
     
     @media (max-width: 1024px){
-        background-position: left 16px top -103px,right bottom,center center;
-        padding-left: 36px;
-        padding-right: 36px;
+        background-position: left 16px top -103px,center center;
         padding-top: 223px;
-        padding-bottom: 72px;
     }
     @media (max-width: 767px){
         background: 
         url('../img/mob_news_bgVect.png'),
-        url('../img/tb_contact_bgPhoto.png'),
         linear-gradient(180deg, #081822 0%, #3F5462 100%);
-        background-position: left 10px top -80px,center bottom,center center;
+        background-position: left 10px top -80px,center center;
         background-repeat:no-repeat;
-        padding-left: 24px;
-        padding-right: 20px;
         padding-top: 150px;
         
     }
@@ -1752,9 +1792,22 @@ backdrop-filter: blur(4px);
     margin: 0 auto;
     @media (max-width: 1024px){
         max-width: 738px;
+        
+    }
+    @media (max-width: 1024px){
+        max-width: 738px;
+       
+        
+    }
+    @media (max-width: 834px){
+        padding-right: 36px;
+        padding-left: 36px;
     }
     @media (max-width: 767px){
+        padding-right: 0px;
+        padding-left: 0px;
         max-width: 335px;
+        
     }
 }
 .font-contact-info{
@@ -1842,12 +1895,54 @@ margin-top: 16px;
     
     
 }
+.contact-sloagn-wrap{
+    margin-left: 113px;
+    padding-top: 161px;
+    padding-bottom: 138px;
+
+    background: url('../img/pc_contact_bgPhoto.png');
+    background-position: right,bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    padding-right: 90px;
+    @media (max-width: 1399px){
+        margin-left: 83px;
+    }
+    @media (max-width: 1279px){
+        margin-left: 63px;
+
+    }
+    @media (max-width: 1024px){
+        margin-left: 0px;
+        background: url('../img/tb_contact_bgPhoto.png');
+        padding-top: 191.82px;
+        padding-bottom: 72.78px;
+        padding-right: 37px;
+        background-position: right,bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    @media (max-width: 767px){
+        background: url('../img/mob_contact_bgPhoto.png');
+        padding-top: 94px;
+        padding-bottom: 32px;
+        padding-right: 20px;
+        background-position: right,bottom;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    }
+    
+
+   
+}
 .contact-slogan-block{
-    margin-top: 109px;
+    
     font-size: 96px;
     font-style: italic;
     line-height: 110px;
     letter-spacing: -0.04em;
+    -webkit-text-stroke: 3px #fff;
+            -webkit-text-fill-color: transparent;
     text-align: right;
     p:nth-child(2){
         margin-right: 86px;
@@ -1856,12 +1951,11 @@ margin-top: 16px;
         margin-right: 156px;
     }
     @media (max-width: 1024px){
-        margin-top: 247px;
-        
+        font-size: 72px;
+        line-height: 82.79px;
         
     }
     @media (max-width: 767px){
-        margin-top: 142px;
         font-size: 40px;
         line-height: 46px;
     }
@@ -1911,6 +2005,8 @@ margin-top: 16px;
        font-style: italic;
        line-height: 110px;
        letter-spacing: -0.04em;
+       -webkit-text-stroke: 3px #fff;
+            -webkit-text-fill-color: transparent;
        font-family: Arial, Helvetica, sans-serif;
        
 
@@ -1947,6 +2043,7 @@ margin-top: 16px;
             font-weight: 700;
             line-height: 83px;
             letter-spacing: -0.04em;
+            
 
         }
         .products-banner-intro{
@@ -2531,6 +2628,7 @@ margin-top: 16px;
     .features-chart{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         div:nth-child(1){
             width: 60.816681%;
         }
