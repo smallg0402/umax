@@ -367,6 +367,12 @@ body {
 
 @media (max-width: 1440px) {
   .home-bevel-sloganToservice {
+    height: 287px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .home-bevel-sloganToservice {
     height: 181px;
     padding-top: 0px;
     margin-top: -180px;
@@ -1042,7 +1048,8 @@ body {
 
 @media (max-width: 1440px) {
   .about-main {
-    background-position: top 360px left 90px,center center;
+    background: -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
+    background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
   }
   .about-main .padding-main-left {
     margin-top: -220px;
@@ -1247,6 +1254,12 @@ body {
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, #001F3F 50%, #001F3F);
   padding-top: 21.841704%;
   height: 0px;
+}
+
+@media (max-width: 1440px) {
+  .about-bevel-bannerTstory {
+    height: 287px;
+  }
 }
 
 @media (max-width: 1024px) {
