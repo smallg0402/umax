@@ -1116,7 +1116,7 @@ body {
 }
 
 @media (max-width: 1440px) {
-  .about-banner {
+  .about-banner .about-banner-main {
     height: 668px;
   }
 }
