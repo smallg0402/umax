@@ -39,7 +39,7 @@ body{
     letter-spacing: 0.025em;
     @media (max-width: 767px){
         font-size: 16px;
-        line-height: 19.36px;
+        line-height: 24px;
     }
 }
 .padding-tab{
@@ -334,7 +334,7 @@ body{
     flex-direction: column;
     align-items: center;
     .home-service-items{
-        transform: translateX(-63px);
+        transform: translateX(-49px);
         margin-top: 56px;
         display: flex;
         li{
@@ -435,11 +435,11 @@ body{
             }
             a:hover{
                 color: #86CCFF;
-                border-bottom: 1px solid #86CCFF;
+                border-bottom: 1px solid  #4691C8;
             }
-            a:active{
-                color: #4691C8;
-                border-bottom: 1px solid #4691C8;
+            a.active{
+                color: #86CCFF;
+                border-bottom: 1px solid #86CCFF;
             }
            
         }
@@ -478,7 +478,7 @@ body{
         .product-sub-menu a:hover{
             background: linear-gradient(282deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5%,#4691C8 5% ,rgba(132, 203, 255, 0.12) 95%,rgba(0,0,0,0) 95%);
         }
-        .product-sub-menu.active a{
+        .product-sub-menu a.active{
             background: linear-gradient(282deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 5%,#4691C8 5% ,rgba(132, 203, 255, 0.12) 95%,rgba(0,0,0,0) 95%);
         }
         .product-diagram-img{
@@ -495,7 +495,7 @@ body{
             margin-bottom: -53px;
             padding: 32px;
             background: #000000C2; 
-            .product-name{
+            .product-name a{
                 font-weight: 900;
                 font-size: 48px;
                 line-height: 68px;
@@ -503,6 +503,9 @@ body{
                 font-family: 'Arial Black';
                 
                 
+            }
+            .product-name a:hover{
+                text-decoration: none;
             }
             .product-intro{
                 margin-top: 8px;
@@ -579,10 +582,13 @@ body{
                     padding-top: 24px;
                     padding-bottom: 24px;
                     background: linear-gradient(282deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 13% ,#18537D 13%, rgba(24, 83, 125, 0.21) 87%,rgba(0,0,0,0) 87%);
-                    padding-right: 18px;
+                    padding-right: 20px;
                     font-size: 16px;
                 }
                 a:hover{
+                    background: linear-gradient(282deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 13%,#4691C8 13% ,rgba(132, 203, 255, 0.12) 87%,rgba(0,0,0,0) 87%);
+                }
+                a.active{
                     background: linear-gradient(282deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 13%,#4691C8 13% ,rgba(132, 203, 255, 0.12) 87%,rgba(0,0,0,0) 87%);
                 }
                 
@@ -922,12 +928,7 @@ body{
                 font-size: 28px;
                 line-height: 39px;
             }
-            p{
-                font-size: 14px;
-                font-weight: 300;
-                line-height: 22px;
-                letter-spacing: 0.025em;
-            }
+            
         }
     }
 }
@@ -1053,7 +1054,7 @@ body{
         .team-name{
             font-weight: 700;
             margin-bottom: 16px;
-            margin-bottom: 8px;
+            margin-top: 12px;
         }
     }
     @media (max-width: 1024px){
@@ -2202,7 +2203,10 @@ margin-top: 16px;
                 font-family: 'Arial Black';
                 
                 
+                
             }
+    
+
             .product-intro{
                 margin-top: 8px;
             }

@@ -8,6 +8,3 @@ showmenu.addEventListener('click',function(){
     }
 })
 
-$('.carousel').carousel({
-    interval: 2000
-  })

@@ -58,8 +58,8 @@ body {
 
 @media (max-width: 767px) {
   .font-text {
-    font-size: 14px;
-    line-height: 17.36px;
+    font-size: 16px;
+    line-height: 24px;
   }
 }
 
@@ -395,8 +395,8 @@ body {
 }
 
 .home-service .home-service-items {
-  -webkit-transform: translateX(-63px);
-          transform: translateX(-63px);
+  -webkit-transform: translateX(-49px);
+          transform: translateX(-49px);
   margin-top: 56px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,12 +543,12 @@ body {
 
 .home-product .product-main-menu li a:hover {
   color: #86CCFF;
-  border-bottom: 1px solid #86CCFF;
+  border-bottom: 1px solid  #4691C8;
 }
 
-.home-product .product-main-menu li a:active {
-  color: #4691C8;
-  border-bottom: 1px solid #4691C8;
+.home-product .product-main-menu li a.active {
+  color: #86CCFF;
+  border-bottom: 1px solid #86CCFF;
 }
 
 @media (max-width: 1024px) {
@@ -599,7 +599,7 @@ body {
   background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 5%, #4691C8 5%, rgba(132, 203, 255, 0.12) 95%, rgba(0, 0, 0, 0) 95%);
 }
 
-.home-product .product-diagram .product-sub-menu.active a {
+.home-product .product-diagram .product-sub-menu a.active {
   background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 5%, #4691C8 5%, rgba(132, 203, 255, 0.12) 95%, rgba(0, 0, 0, 0) 95%);
 }
 
@@ -621,12 +621,16 @@ body {
   background: #000000C2;
 }
 
-.home-product .product-diagram .product-diagram-content .product-name {
+.home-product .product-diagram .product-diagram-content .product-name a {
   font-weight: 900;
   font-size: 48px;
   line-height: 68px;
   color: #86CCFF;
   font-family: 'Arial Black';
+}
+
+.home-product .product-diagram .product-diagram-content .product-name a:hover {
+  text-decoration: none;
 }
 
 .home-product .product-diagram .product-diagram-content .product-intro {
@@ -723,10 +727,13 @@ body {
     padding-top: 24px;
     padding-bottom: 24px;
     background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 13%, #18537D 13%, rgba(24, 83, 125, 0.21) 87%, rgba(0, 0, 0, 0) 87%);
-    padding-right: 18px;
+    padding-right: 20px;
     font-size: 16px;
   }
   .home-product .product-diagram .product-sub-menu a:hover {
+    background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 13%, #4691C8 13%, rgba(132, 203, 255, 0.12) 87%, rgba(0, 0, 0, 0) 87%);
+  }
+  .home-product .product-diagram .product-sub-menu a.active {
     background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 13%, #4691C8 13%, rgba(132, 203, 255, 0.12) 87%, rgba(0, 0, 0, 0) 87%);
   }
   .home-product .product-diagram .product-diagram-img {
@@ -1132,12 +1139,6 @@ body {
     font-size: 28px;
     line-height: 39px;
   }
-  .about-banner .about-banner-intro p {
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 22px;
-    letter-spacing: 0.025em;
-  }
 }
 
 .about-menu {
@@ -1271,7 +1272,7 @@ body {
 .about-team .swiper-slide .team-name {
   font-weight: 700;
   margin-bottom: 16px;
-  margin-bottom: 8px;
+  margin-top: 12px;
 }
 
 @media (max-width: 1024px) {

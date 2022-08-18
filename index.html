@@ -120,21 +120,21 @@
                 <section class="home-product padding-tab" id="home_product">
                     <h3 class="font-section-title align-center transX">UMAX’s products</h3>
                     <ul class="product-main-menu">
-                        <li><a href="#home_product" class="p-text">CBS</a></li>
+                        <li><a href="#home_product" class="p-text active">CBS</a></li>
                         <li><p class="p-text">Comming Soon...</p></li>
                     </ul>
                     <div class="product-diagram">
                         <ul class="product-sub-menu">
-                            <li><a href="#home_product" class="home-product-submenu-item">VCBS-I</a></li>
+                            <li><a href="#home_product" class="home-product-submenu-item active">VCBS-I</a></li>
                             <li><a href="#home_product" class="home-product-submenu-item">VCBS-II</a></li>
-                            <li><a href="#home_product" class="home-product-submenu-item">HBS-2wheels</a></li>
-                            <li><a href="#home_product" class="home-product-submenu-item">HBS-3wheels</a></li>
+                            <li><a href="#home_product" class="home-product-submenu-item">HBS-2</a></li>
+                            <li><a href="#home_product" class="home-product-submenu-item">HBS-3</a></li>
                         </ul>
                         <div class="product-diagram-img">
-                            <img src="img/20220723-VCBS-1.gif" alt="" class="diagram-img-item">
-                            <img src="img/20220723-VCBS-2.gif" alt="" class="diagram-img-item" style="display: none;">
-                            <img src="img/20220723-HBS1.gif" alt="" class="diagram-img-item" style="display: none;">
-                            <img src="img/HBS-2三輪車.gif" alt="" class="diagram-img-item" style="display: none;">
+                            <img src="img/pc_schematic_vcbs1.gif" alt="" class="diagram-img-item">
+                            <img src="img/pc_schematic_vcbs2.gif" alt="" class="diagram-img-item" style="display: none;">
+                            <img src="img/pc_schematic_hbs2.gif" alt="" class="diagram-img-item" style="display: none;">
+                            <img src="img/pc_schematic_hbs3.gif" alt="" class="diagram-img-item" style="display: none;">
                         </div>
                         <div class="product-diagram-content">
                             <div class="diagram-content-item">
@@ -175,7 +175,7 @@
                             </div>
                             <h5 class="news-item-title"><a href="news_inner.html">UMAX was founded in May 01, 2022</a></h5>
                             <div class="news-item-tag">
-                                <span href="">#Report</span>
+                                <span href="">#Annoce</span>
                             </div>
                         </li>
                         <li class="news-item">
@@ -296,6 +296,9 @@
         home_product_submenu_item.forEach(function(item,i){
          item.addEventListener('click',function(e){
             //  e.preventDefault();
+            home_product_submenu_item.forEach(function(item,i){
+                item.classList.remove('active');
+            })
              diagram_img_item.forEach(function(item){
                 item.setAttribute("style","display: none;");
              })
@@ -305,6 +308,7 @@
             
              diagram_img_item[i].setAttribute('style','display: block;');
              diagram_content_item[i].setAttribute('style','display: block;');
+             home_product_submenu_item[i].classList.add('active');
          })
 
      })
