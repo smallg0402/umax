@@ -148,8 +148,8 @@ body {
 
 @media (max-width: 767px) {
   .font-sub-title {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 18px;
+    line-height: 22px;
   }
 }
 
@@ -189,7 +189,13 @@ body {
 }
 
 .home-banner .home-banner-content .home-banner-item {
-  height: 731px;
+  height: 50.694444vw;
+}
+
+@media (max-width: 1440px) {
+  .home-banner .home-banner-content .home-banner-item {
+    height: 730px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -277,9 +283,6 @@ body {
 }
 
 .slogan-block .slogan-block-wrap {
-  height: 287px;
-  background: -webkit-gradient(linear, left top, right bottom, from(transparent), color-stop(50%, transparent), color-stop(50%, #40749A), to(#40749A));
-  background: linear-gradient(to right bottom, transparent, transparent 50%, #40749A 50%, #40749A);
   position: relative;
   z-index: 10;
 }
@@ -354,11 +357,44 @@ body {
   }
 }
 
+.home-bevel-sloganToservice {
+  margin-top: -320px;
+  height: 0px;
+  padding-top: 21.841704%;
+  background: -webkit-gradient(linear, left top, right bottom, from(transparent), color-stop(50%, transparent), color-stop(50%, #40749A), to(#40749A));
+  background: linear-gradient(to right bottom, transparent, transparent 50%, #40749A 50%, #40749A);
+}
+
+@media (max-width: 1440px) {
+  .home-bevel-sloganToservice {
+    height: 181px;
+    padding-top: 0px;
+    margin-top: -180px;
+  }
+}
+
+@media (max-width: 767px) {
+  .home-bevel-sloganToservice {
+    height: 82px;
+    padding-top: 0px;
+    margin-top: -80px;
+  }
+}
+
 .home-main {
   background: url("../img/pc_home_bgVec.png"), -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
   background: url("../img/pc_home_bgVec.png"), linear-gradient(180deg, #081822 0%, #3F5462 100%);
-  background-position: top 430px left 90px,center center;
+  background-position: top 32.638889vw left 90px,center center;
   background-size: cover,auto;
+}
+
+@media (max-width: 1440px) {
+  .home-main {
+    background: url("../img/pc_home_bgVec.png"), -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
+    background: url("../img/pc_home_bgVec.png"), linear-gradient(180deg, #081822 0%, #3F5462 100%);
+    background-position: top 470px left 90px,center center;
+    background-size: cover,auto;
+  }
 }
 
 @media (max-width: 1439px) {
@@ -648,7 +684,7 @@ body {
   text-decoration: none;
   font-family: 'Heebo';
   font-weight: 700;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 150%;
   color: #4691C8;
   margin-right: 44px;
@@ -728,7 +764,6 @@ body {
     padding-bottom: 24px;
     background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 13%, #18537D 13%, rgba(24, 83, 125, 0.21) 87%, rgba(0, 0, 0, 0) 87%);
     padding-right: 20px;
-    font-size: 16px;
   }
   .home-product .product-diagram .product-sub-menu a:hover {
     background: linear-gradient(282deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0) 13%, #4691C8 13%, rgba(132, 203, 255, 0.12) 87%, rgba(0, 0, 0, 0) 87%);
@@ -996,20 +1031,21 @@ body {
 .about-main {
   background: url("../img/about_bgVec.png"), -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
   background: url("../img/about_bgVec.png"), linear-gradient(180deg, #081822 0%, #3F5462 100%);
-  background-position: top 360px left 90px,center center;
+  background-position: top 25vw left 90px,center center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .about-main .padding-main-left {
-  margin-top: -220px;
+  margin-top: -15.277778vw;
 }
 
-@media (max-width: 1439px) {
+@media (max-width: 1440px) {
   .about-main {
-    background: -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
-    background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
-    background-position: center center;
+    background-position: top 360px left 90px,center center;
+  }
+  .about-main .padding-main-left {
+    margin-top: -220px;
   }
 }
 
@@ -1039,7 +1075,7 @@ body {
   background-size: 100% 100%;
   position: relative;
   z-index: 1;
-  height: 668px;
+  height: 46.388889vw;
   padding: 108px 138px 242px 92px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1077,6 +1113,12 @@ body {
 
 .about-banner .about-banner-intro p {
   margin-top: 20px;
+}
+
+@media (max-width: 1440px) {
+  .about-banner {
+    height: 668px;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -1203,12 +1245,14 @@ body {
 .about-bevel-bannerTstory {
   background: -webkit-gradient(linear, left top, right bottom, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0)), color-stop(50%, #001F3F), to(#001F3F));
   background: linear-gradient(to right bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 50%, #001F3F 50%, #001F3F);
-  height: 287px;
+  padding-top: 21.841704%;
+  height: 0px;
 }
 
 @media (max-width: 1024px) {
   .about-bevel-bannerTstory {
     height: 181px;
+    padding-top: 0;
     margin-top: 0px;
   }
 }
@@ -1588,7 +1632,7 @@ body {
 }
 
 .about-more .about-more-wrap {
-  width: 431px;
+  max-width: 431px;
 }
 
 .about-more .button-more {
@@ -1630,7 +1674,7 @@ body {
 .news-main {
   background: url("../img/pc_news_bgVector.png"), url("../img/pc_news_bgText.png"), -webkit-gradient(linear, left top, left bottom, from(#081822), to(#3F5462));
   background: url("../img/pc_news_bgVector.png"), url("../img/pc_news_bgText.png"), linear-gradient(180deg, #081822 0%, #3F5462 100%);
-  background-position: center top -103px,center top,center center;
+  background-position: left 90px top -103px,center top,center center;
   background-repeat: no-repeat;
   padding-top: 249px;
 }
@@ -1754,7 +1798,7 @@ body {
 }
 
 .section-news-more .more-infromation {
-  background: linear-gradient(168.9deg, rgba(0, 0, 0, 0) 0% 38%, #64737D 38% 100%);
+  background: linear-gradient(168.9deg, rgba(0, 0, 0, 0) 0% 42%, #64737D 42% 100%);
 }
 
 .section-news-more .more-infromation > div {
@@ -1781,6 +1825,30 @@ body {
 
 .section-news-more .button-more {
   margin-top: 32px;
+}
+
+@media (max-width: 1899px) {
+  .section-news-more .more-infromation {
+    background: linear-gradient(168.9deg, rgba(0, 0, 0, 0) 0% 41%, #64737D 41% 100%);
+  }
+}
+
+@media (max-width: 1799px) {
+  .section-news-more .more-infromation {
+    background: linear-gradient(168.9deg, rgba(0, 0, 0, 0) 0% 40%, #64737D 40% 100%);
+  }
+}
+
+@media (max-width: 1699px) {
+  .section-news-more .more-infromation {
+    background: linear-gradient(168.9deg, rgba(0, 0, 0, 0) 0% 39%, #64737D 38% 100%);
+  }
+}
+
+@media (max-width: 1599px) {
+  .section-news-more .more-infromation {
+    background: linear-gradient(168.9deg, rgba(0, 0, 0, 0) 0% 38%, #64737D 38% 100%);
+  }
 }
 
 @media (max-width: 1440px) {

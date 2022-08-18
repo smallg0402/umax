@@ -110,8 +110,8 @@ body{
         line-height: 23px;
     }
     @media (max-width: 767px){
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 18px;
+        line-height: 22px;
     }
 }
 
@@ -154,7 +154,10 @@ body{
     
     .home-banner-content{    
         .home-banner-item{
-            height: 731px; 
+            height: 50.694444vw;
+            @media (max-width: 1440px){
+                height: 730px;
+            }
             @media (max-width: 1024px){
                 height: 520px;
             }
@@ -230,8 +233,6 @@ body{
     padding-left: 126px;
     
     .slogan-block-wrap{
-        height: 287px;
-        background: linear-gradient(to right bottom,transparent,transparent 50%,#40749A 50%,#40749A);
         position:relative;
         z-index: 10;
         p{
@@ -309,10 +310,31 @@ body{
     
     
 }
+.home-bevel-sloganToservice{
+    margin-top: -320px;
+    height: 0px;
+    padding-top: 21.841704%;
+    background: linear-gradient(to right bottom,transparent,transparent 50%,#40749A 50%,#40749A);
+    @media (max-width: 1440px){
+        height: 181px;
+        padding-top: 0px;
+        margin-top: -180px;
+    }
+    @media (max-width: 767px){
+        height: 82px;
+        padding-top: 0px;
+        margin-top: -80px;
+    }
+}
 .home-main{
     background: url('../img/pc_home_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
-    background-position: top 430px left 90px,center center;
+    background-position: top 32.638889vw left 90px,center center;
     background-size: cover,auto;
+    @media (max-width: 1440px){
+        background: url('../img/pc_home_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 470px left 90px,center center;
+        background-size: cover,auto;
+    }
     @media (max-width: 1439px){
         background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
         background-position: center center;
@@ -517,7 +539,7 @@ body{
                     text-decoration: none;
                     font-family: 'Heebo';
                     font-weight: 700;
-                    font-size: 16px;
+                    font-size: 18px;
                     line-height: 150%;
                     color: #4691C8;
                     margin-right: 44px;
@@ -583,7 +605,7 @@ body{
                     padding-bottom: 24px;
                     background: linear-gradient(282deg,rgba(0,0,0,0) 0%,rgba(0,0,0,0) 13% ,#18537D 13%, rgba(24, 83, 125, 0.21) 87%,rgba(0,0,0,0) 87%);
                     padding-right: 20px;
-                    font-size: 16px;
+                    
                 }
                 a:hover{
                     background: linear-gradient(282deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 13%,#4691C8 13% ,rgba(132, 203, 255, 0.12) 87%,rgba(0,0,0,0) 87%);
@@ -806,19 +828,23 @@ body{
 
 .about-main{
     background: url('../img/about_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
-    background-position: top 360px left 90px,center center;
+    background-position: top 25vw left 90px,center center;
     background-repeat: no-repeat;
     background-size: cover;
     
 
     .padding-main-left{
-        margin-top: -220px;
+        margin-top: -15.277778vw;
 
     }
-    @media (max-width: 1439px){
-        background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
-        background-position: center center;
+    @media (max-width: 1440px){
+        background-position: top 360px left 90px,center center;
+        .padding-main-left{
+            margin-top: -220px;
+    
+        }
     }
+    
     @media (max-width: 1024px){
         background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
         .padding-main-left{
@@ -842,7 +868,7 @@ body{
         background-size: 100% 100%;
         position: relative;
         z-index: 1;
-        height:668px;
+        height:46.388889vw;
         padding: 108px 138px 242px 92px; 
         display: flex;
         align-items: center;
@@ -873,6 +899,9 @@ body{
         p{
             margin-top: 20px;
         }
+    }
+    @media (max-width: 1440px){
+        height: 668px;
     }
     
     
@@ -992,9 +1021,11 @@ body{
 
 .about-bevel-bannerTstory{
     background: linear-gradient(to right bottom,rgba(0,0,0,0),rgba(0,0,0,0)50%,#001F3F 50% ,#001F3F);
-    height: 287px;
+    padding-top: 21.841704%;
+    height: 0px;
     @media(max-width: 1024px){
         height: 181px;
+        padding-top: 0;
         margin-top: 0px;
         
     }
@@ -1324,7 +1355,7 @@ body{
     background-size: cover;
     padding: 378px 0 119px 202px;
     .about-more-wrap{
-        width: 431px;
+        max-width: 431px;
     }
     .button-more{
         margin-top: 32px;
@@ -1365,7 +1396,7 @@ body{
     url('../img/pc_news_bgVector.png'),
     url('../img/pc_news_bgText.png'),
     linear-gradient(180deg, #081822 0%, #3F5462 100%);
-    background-position: center top -103px,center top,center center;
+    background-position: left 90px top -103px,center top,center center;
     background-repeat:no-repeat;
     padding-top: 249px;
     
@@ -1489,7 +1520,9 @@ body{
             margin: 0 auto;
         }
         
-        background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 38%,#64737D 38% 100%);
+        background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 42%,#64737D 42% 100%);
+        
+       
         p:nth-child(2){
             margin-top: 20px;
         }
@@ -1516,6 +1549,30 @@ body{
 
     .button-more{
         margin-top: 32px;
+    }
+    @media(max-width: 1899px){
+        .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 41%,#64737D 41% 100%);
+        }
+
+    }
+    @media(max-width: 1799px){
+        .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 40%,#64737D 40% 100%);
+        }
+
+    }
+    @media(max-width: 1699px){
+        .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 39%,#64737D 38% 100%);
+        }
+
+    }
+    @media(max-width: 1599px){
+        .more-infromation{
+            background: linear-gradient(168.9deg,rgba(0,0,0,0) 0% 38%,#64737D 38% 100%);
+        }
+
     }
     @media(max-width: 1440px){
         .more-infromation{

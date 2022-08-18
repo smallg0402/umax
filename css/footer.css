@@ -23,9 +23,6 @@
 
 .footer-main .footer-infro .footer-infro-wrap ul li {
   margin-top: 28.5px;
-}
-
-.footer-main .footer-infro .footer-infro-wrap ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,8 +37,12 @@
   color: white;
 }
 
-.footer-main .footer-infro .footer-infro-wrap ul li a span {
+.footer-main .footer-infro .footer-infro-wrap ul li span {
   margin-left: 16px;
+}
+
+.footer-main .footer-infro .footer-infro-wrap ul li a {
+  color: white;
 }
 
 .footer-main .footer-menu {
@@ -60,6 +61,15 @@
 
 .footer-main .footer-menu .footer-menu-wrap ul {
   margin-top: 28px;
+}
+
+.footer-main .footer-menu .footer-menu-wrap ul li a {
+  color: white;
+}
+
+.footer-main .footer-menu .footer-menu-wrap ul li a:hover {
+  text-decoration: none;
+  color: #4691C8;
 }
 
 .footer-main .footer-menu .footer-menu-wrap ul li:not(:first-child) {
