@@ -331,18 +331,63 @@ body{
     }
 }
 .home-main{
-    background: url('../img/pc_home_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+    background: url('../img/pc_home_bgVec1440.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
     background-position: top 32.638889vw left 90px,center center;
     background-size: cover,auto;
     @media (max-width: 1440px){
-        background: url('../img/pc_home_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
-        background-position: top 470px left 90px,center center;
+        background: url('../img/pc_home_bgVec1440.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
         background-size: cover,auto;
     }
-    @media (max-width: 1439px){
-        background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
-        background-position: center center;
+    @media (max-width: 1380px){
+        background: url('../img/pc_home_bgVec1380.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
     }
+    @media (max-width: 1280px){
+        background: url('../img/pc_home_bgVec1280.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+    @media (max-width: 1240px){
+        background: url('../img/pc_home_bgVec1240.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+    @media (max-width: 1200px){
+        background: url('../img/pc_home_bgVec1200.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+    @media (max-width: 1160px){
+        background: url('../img/pc_home_bgVec1160.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+    @media (max-width: 1120px){
+        background: url('../img/pc_home_bgVec1120.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+    @media (max-width: 1080px){
+        background: url('../img/pc_home_bgVec1080.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+    @media (max-width: 1040px){
+        background: url('../img/pc_home_bgVec1040.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 450px left 90px,center center;
+        background-size: cover,auto;
+       
+    }
+
 
     
 
@@ -797,8 +842,6 @@ body{
 
     
     @media (max-width: 1024px){
-        background-size: cover;
-        background-position: right;
         background-image: url(../img/tb_home_about_bg.png);
         .home-about-main{
             padding: 40px 44px;
@@ -843,15 +886,82 @@ body{
     }
     @media (max-width: 1440px){
         
-        background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background: url('../img/about_bgVec.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
         .padding-main-left{
             margin-top: -220px;
     
         }
     }
+    @media (max-width: 1400px){
+        
+        background: url('../img/about_bgVec_1400.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1360px){
+        
+        background: url('../img/about_bgVec_1360.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1320px){
+        
+        background: url('../img/about_bgVec_1320.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1280px){
+        
+        background: url('../img/about_bgVec_1280.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1240px){
+        
+        background: url('../img/about_bgVec_1240.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1200px){
+        
+        background: url('../img/about_bgVec_1200.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1160px){
+        
+        background: url('../img/about_bgVec_1160.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1120px){
+        
+        background: url('../img/about_bgVec_1120.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    @media (max-width: 1080px){
+        
+        background: url('../img/about_bgVec_1080.png'),linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        background-position: top 360px left 90px,center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
     
     @media (max-width: 1024px){
         background: linear-gradient(180deg, #081822 0%, #3F5462 100%);
+        
         .padding-main-left{
             margin-top: -150px;
             
@@ -2161,12 +2271,29 @@ margin-top: 16px;
     z-index: 1;
     padding-left: 126px;
     background: url('../img/pc_products_bgVec.png');
-    background-position: left 90px top 450px;
+    background-position: left 90px top 430px;
     background-repeat: no-repeat;
     background-size: cover;
-    @media (max-width: 1439px){
-        background: none;
+    @media (max-width: 1440px){
+        
+        background: url('../img/pc_products_bgVec.png');
+        background-position: left 90px top 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
+    @media (max-width: 1400px){
+
+        background: url('../img/pc_products_bgVec1400.png');
+        background-position: left 90px top 400px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media (max-width: 1360px){
+        background: none;
+       
+    }
+  
+    
     @media (max-width: 1024px){
         padding-left: 0;
     }
