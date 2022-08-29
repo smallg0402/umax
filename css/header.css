@@ -61,6 +61,7 @@ header .header-main nav {
 header .header-main nav a {
   text-decoration: none;
   color: white;
+  font-family: 'Heebo', sans-serif;
 }
 
 header .header-main nav a:hover {
