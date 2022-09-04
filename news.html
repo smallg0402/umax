@@ -35,9 +35,9 @@
         <section class="news-main-mainwrap">
             <h2 class="font-section-title align-center">News</h2>
             <ul class="news-menu">
-                <li>All</li>
-                <li>Announce</li>
-                <li>Report</li>
+                <li class="All">All</li>
+                <li class="Announce">Announce</li>
+                <li class="Report">Report</li>
             </ul>
             <ul class="news-list">
                 <li class="news-item cateAnnounce">
@@ -47,7 +47,7 @@
                     </div>
                     <h5 class="news-item-title"><a href="news_inner.html">UMAX was founded in May 01, 2022</a></h5>
                     <div class="news-item-tag">
-                        <span href="">#Announce</span>
+                        <span href="">#UMAX</span>
                     </div>
                 </li>
                 <li class="news-item cateAnnounce">
@@ -57,20 +57,21 @@
                 </div>
                 <h5 class="news-item-title"><a href="news_inner.html">PGO ZAN V-CBS announced</a></h5>
                 <div class="news-item-tag">
-        
-                    <span href="">#Announce</span>
+                    <span href="">#VCBS</span>
+                    <span href="">#PGO</span>
                 </div>
                 </li>
                 
                 <li class="news-item cateAnnounce">
                     <a href="news_inner.html" class="news-simple-img"><img src="img/news_photo_kymco.png" alt=""></a>
                    <div class="news-item-attribute">
-                    <span>JAN 27 , 2022</span>
+                    <span>MAR 12 , 2021</span>
                 </div>
                 <h5 class="news-item-title"><a href="news_inner.html">KYMCO GP 125 VCS announced
                 </a></h5>
                 <div class="news-item-tag">
-                    <span href="">#Announce</span>
+                    <span href="">#VCBS</span>
+                    <span href="">#KYMCO</span>
                 </div>
                 </li>
             </ul>
@@ -81,7 +82,7 @@
         <section class="section-news-more">
             <div class="more-infromation">
                 <div>
-                    <p class="font-section-title">More infromation?</p>
+                    <p class="font-section-title">More infromation</p>
                     <p class="font-text">We are committed to the research and development and innovation of vehicle-related products, with the goal of improving vehicle performance</p>
                     <a href="contact.html" class="button-more">Contact Us ></a>
                 </div>
@@ -89,7 +90,7 @@
             </div>
             <div class="more-about">
                 <div>
-                    <p class="font-section-title">More about Umax?</p>
+                    <p class="font-section-title">More about UMAX</p>
                     <p class="font-text">We are committed to the research and development and innovation of vehicle-related products, with the goal of improving vehicle performance</p>
                     <a href="about.html" class="button-more">About Us ></a>
                 </div>
@@ -169,7 +170,7 @@
                 $('.news-menu li').attr("style","colo: white;");
                 $(this).css("color","#86CCFF");
                 $(this).css("border-bottom","1px solid #86CCFF");
-                let value = $(this).text();
+                let value = $(this).attr('class');
                 console.log(value);
                 $(".news-item").fadeOut(0);
                 

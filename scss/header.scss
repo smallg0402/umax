@@ -81,7 +81,7 @@ header{
                     
                 }
             }
-            @media (max-width: 767px){
+            @media (max-width: 996px){
                 .header-nav-main{
                     display: block;
                     position: absolute;
@@ -117,7 +117,7 @@ header{
     }
     .showmenu{
         display: none;
-        @media (max-width: 767px){
+        @media (max-width: 996px){
            display:inline;
            margin-left: 15px;
         }

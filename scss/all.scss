@@ -812,6 +812,7 @@ body{
         .font-more-link{
             color: #4691C8;
             text-decoration: none;
+            font-weight: 700;
             
             
         }
@@ -845,6 +846,7 @@ body{
         background-image: url(../img/tb_home_about_bg.png);
         .home-about-main{
             padding: 40px 44px;
+            min-height: 305px;
         }
         .about-slogan-block{
            align-items:flex-end;
@@ -864,6 +866,7 @@ body{
          }
         .home-about-main{
             padding: 40px 44px;
+            min-height: 0px;
         }
         .about-slogan{
             width: 299px;
@@ -1471,10 +1474,10 @@ body{
     }
 }
 .about-more{
-    margin-top: -310px;
+    margin-top: -21.527778vw;
     background: url('../img/pc_about_more_bg.png');
     background-size: cover;
-    padding: 378px 0 119px 202px;
+    padding: 26.25vw 0 119px 202px;
     .about-more-wrap{
         max-width: 431px;
     }
@@ -1483,6 +1486,7 @@ body{
     }
     
     @media(max-width: 1024px){
+        margin-top: -310px;
         padding-top: 315px;
         padding-bottom: 90px;
         
@@ -2271,7 +2275,7 @@ margin-top: 16px;
     z-index: 1;
     padding-left: 126px;
     background: url('../img/pc_products_bgVec.png');
-    background-position: left 90px top 430px;
+    background-position: left 90px top 27.777778vw;
     background-repeat: no-repeat;
     background-size: cover;
     @media (max-width: 1440px){
@@ -2576,7 +2580,7 @@ margin-top: 16px;
             margin-top: 18px;
         }
         .description-second{
-            margin-top: 134px;
+            margin-top: 17.351111vw;
         }
     }
     .module-description-mobUp{
@@ -2585,6 +2589,15 @@ margin-top: 16px;
     .module-description-mobBottom{
         display:none;
     }
+
+    @media (max-width: 1440px){
+        .module-description{
+            .description-second{
+                margin-top: 134px;
+            }
+        }
+    }
+    
     @media (max-width: 1200px){
         .module-description{
             .description-second{
@@ -2845,7 +2858,7 @@ margin-top: 16px;
         }
     }
 
-    @media (max-width: 767px){
+    @media (max-width: 1024px){
         .features-chart{
             flex-wrap: wrap;
             div:nth-child(1){
@@ -2855,6 +2868,7 @@ margin-top: 16px;
                 display: block;
                 width: 100%;
                 height: auto;
+                margin-top: 20px;
             }
         }
     }
@@ -2894,6 +2908,9 @@ margin-top: 16px;
     picture{
         display: block;
         width: 29.604262%;
+        img{
+            width: 100%;
+        }
 
     }
     div{
