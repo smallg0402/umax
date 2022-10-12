@@ -2,5 +2,10 @@
     "about": "https://umax.tw/about.html",
     "news": "https://umax.tw/news.html",
     "products": "https://umax.tw/products.html",
-    "contact": "https://umax.tw/contact.html"
+    "contact": "https://umax.tw/contact.html",
+    "home-ch": "https://umax.tw/index-ch.html",
+    "about-ch": "https://umax.tw/about-ch.html",
+    "news-ch": "https://umax.tw/news-ch.html",
+    "contact-ch": "https://umax.tw/contact-ch.html",
+    "products-ch": "https://umax.tw/products-ch.html"
 }
