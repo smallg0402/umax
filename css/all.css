@@ -237,7 +237,7 @@ body {
 }
 
 .home-banner .home-banner-content .carousel-caption p {
-  font-size: 18px;
+  font-size: 20px;
   line-height: 25.5px;
   font-weight: 700;
   text-align: center;
@@ -253,8 +253,8 @@ body {
   }
   .home-banner .home-banner-content .carousel-caption p {
     width: 61.191336%;
-    font-size: 16px;
-    line-height: 22.4px;
+    font-size: 18px;
+    line-height: 25.5px;
   }
 }
 
@@ -266,8 +266,8 @@ body {
   }
   .home-banner .home-banner-content .carousel-caption p {
     width: 100%;
-    font-size: 16px;
-    line-height: 22.4px;
+    font-size: 18px;
+    line-height: 25.5px;
   }
 }
 
@@ -741,6 +741,11 @@ body {
 
 .home-product .product-diagram .product-diagram-content .product-intro {
   margin-top: 8px;
+}
+
+.home-product .product-diagram .product-diagram-content .product-intro strong {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .home-product .product-diagram .product-diagram-content .product-link {
@@ -2735,14 +2740,9 @@ body {
   border-bottom: 1px solid white;
 }
 
-.products-menu .product-main-menu li a:hover {
+.products-menu .product-main-menu li a.active {
   color: #86CCFF;
   border-bottom: 1px solid #86CCFF;
-}
-
-.products-menu .product-main-menu li a:active {
-  color: #4691C8;
-  border-bottom: 1px solid #4691C8;
 }
 
 .products-menu .product-main-menu li p {
@@ -3010,12 +3010,17 @@ body {
 }
 
 .products-module .module-content {
-  width: 33.333333%;
+  width: 25%;
   margin-top: 180px;
 }
 
-.products-module .module-content p {
+.products-module .module-content ul {
   margin-top: 11px;
+  list-style: circle;
+}
+
+.products-module .module-content ul li {
+  margin-top: 5px;
 }
 
 .products-module .module-img {
@@ -3030,14 +3035,25 @@ body {
 .products-module .module-description {
   margin-left: -110px;
   width: 33.508771%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 
 .products-module .module-description .font-text {
   margin-top: 18px;
+  list-style: circle;
 }
 
-.products-module .module-description .description-second {
-  margin-top: 17.351111vw;
+.products-module .module-description .font-text li {
+  margin-top: 5px;
 }
 
 .products-module .module-description-mobUp {
@@ -3050,17 +3066,11 @@ body {
 
 @media (max-width: 1440px) {
   .products-module .module-description .description-second {
-    margin-top: 134px;
+    margin-top: 3vw;
   }
 }
 
 @media (max-width: 1200px) {
-  .products-module .module-description .description-second {
-    margin-top: 60px;
-  }
-}
-
-@media (max-width: 1024px) {
   .products-module {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -3073,6 +3083,9 @@ body {
     width: 60%;
     margin-left: 0px;
     margin-top: 65px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   .products-module .module-img img, .products-module .module-img picture {
     width: 100%;
@@ -3080,13 +3093,15 @@ body {
   .products-module .module-description {
     margin-left: 0px;
     width: 40%;
-    margin-top: 90px;
   }
   .products-module .module-description .font-text {
     margin-top: 18px;
   }
-  .products-module .module-description .description-second {
-    margin-top: 134px;
+}
+
+@media (max-width: 1024px) {
+  .products-module .module-description {
+    margin-top: 60px;
   }
 }
 
@@ -3103,6 +3118,10 @@ body {
   .products-module {
     margin-top: 83px;
   }
+  .products-module .module-content {
+    width: 100%;
+    margin: 0px 20px 0px 20px;
+  }
   .products-module .module-img {
     width: 100%;
     margin-left: 0px;
@@ -3117,6 +3136,10 @@ body {
   }
   .products-module .module-description-mobUp .font-text {
     margin-top: 18px;
+    list-style: circle;
+  }
+  .products-module .module-description-mobUp .font-text li {
+    margin-top: 5px;
   }
   .products-module .module-description-mobBottom {
     display: block;
@@ -3147,6 +3170,10 @@ body {
 .module-hbs .module-content {
   width: 33.333333%;
   margin-top: 0px;
+}
+
+.module-hbs .module-content .font-text {
+  margin-top: 18px;
 }
 
 .module-hbs .module-img {
@@ -3451,11 +3478,16 @@ body {
 .products-specification .products-specification-table span {
   display: block;
   font-family: 'Heebo', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 17px;
   letter-spacing: 0.025em;
   color: #B3BFC8;
+}
+
+.products-specification .products-specification-table sup {
+  font-size: 12px;
+  line-height: 1;
 }
 
 @media (max-width: 1024px) {
