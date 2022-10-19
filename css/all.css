@@ -872,6 +872,9 @@ body {
   .home-product .product-diagram .product-diagram-content .product-intro {
     margin-top: 8px;
   }
+  .home-product .product-diagram .product-diagram-content .product-intro strong {
+    font-size: 18px;
+  }
   .home-product .product-diagram .product-diagram-content .product-link {
     margin-top: 35px;
     -webkit-box-pack: justify;
@@ -2350,9 +2353,13 @@ body {
 
 @media (max-width: 767px) {
   .font-contact-info {
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 48px;
   }
+}
+
+.font-contact-info.ch {
+  -webkit-text-stroke: 1px #fff;
 }
 
 .contact-form {
@@ -2519,6 +2526,7 @@ body {
     padding-top: 20px;
     padding-left: 36px;
     padding-right: 36px;
+    padding-bottom: 20px;
   }
 }
 
@@ -2830,6 +2838,11 @@ body {
   margin-top: 8px;
 }
 
+.products-menu .product-diagram .product-diagram-content .product-intro strong {
+  font-size: 20px;
+  font-weight: bold;
+}
+
 .products-menu .product-diagram .product-diagram-content .product-link {
   margin-top: 45px;
   display: -webkit-box;
@@ -2952,6 +2965,9 @@ body {
   }
   .products-menu .product-diagram .product-diagram-content .product-intro {
     margin-top: 8px;
+  }
+  .products-menu .product-diagram .product-diagram-content .product-intro strong {
+    font-size: 18px;
   }
 }
 
@@ -3492,7 +3508,7 @@ body {
 
 @media (max-width: 1024px) {
   .products-specification {
-    padding: 30px 36px 36px 20px;
+    padding: 30px 36px 30px 36px;
   }
   .products-specification > h2 {
     display: block;
@@ -3516,6 +3532,12 @@ body {
   }
   .products-specification .products-specification-table th {
     text-align: right;
+  }
+}
+
+@media (max-width: 767px) {
+  .products-specification {
+    padding: 20px;
   }
 }
 

@@ -688,6 +688,10 @@ body{
                 }
                 .product-intro{
                     margin-top: 8px;
+                    strong{
+                        font-size: 18px;
+                        
+                    }
                 }
                 .product-link {
                     margin-top: 35px;
@@ -2009,10 +2013,14 @@ margin-top: 16px;
   -webkit-text-stroke: 2px #fff;
   -webkit-text-fill-color: transparent;
   @media (max-width: 767px){
-    font-size: 40px;
-    line-height: 56px;
+    font-size: 30px;
+    line-height: 48px;
   }
-  }
+}
+.font-contact-info.ch{
+    -webkit-text-stroke: 1px #fff;
+     
+}
 .contact-form{
     >div:not(:first-child){
         margin-top: 20px;
@@ -2160,6 +2168,7 @@ margin-top: 16px;
         padding-top: 20px;
         padding-left: 36px;
         padding-right: 36px;
+        padding-bottom: 20px;
     }
     @media (max-width: 767px){
         padding-top: 20px;
@@ -2412,6 +2421,10 @@ margin-top: 16px;
 
             .product-intro{
                 margin-top: 8px;
+                strong{
+                    font-size: 20px;
+                    font-weight: bold;
+                }
             }
             .product-link {
                 margin-top: 45px;
@@ -2513,6 +2526,10 @@ margin-top: 16px;
                 }
                 .product-intro{
                     margin-top: 8px;
+                    strong{
+                        font-size: 18px;
+                        
+                    }
                 }
                 
             }
@@ -2983,7 +3000,7 @@ margin-top: 16px;
     }
 
     @media (max-width: 1024px){
-        padding: 30px 36px 36px 20px;
+        padding: 30px 36px 30px 36px;
         >h2{
             display: block;
         }
@@ -3008,6 +3025,9 @@ margin-top: 16px;
                 text-align: right;
             }
         }
+    }
+    @media (max-width: 767px){
+        padding: 20px;
     }
     
 }

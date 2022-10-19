@@ -21,14 +21,14 @@
             <h1 class="logo"><a href="index.html">UMAX</a></h1>
             <nav>
                 <ul class="header-nav-main">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="about.html">About Us</a></li>
-                    <li><a href="news.html">News</a></li>
-                    <li><a href="products.html">Products</a></li>
-                    <li><a href="contact.html">Contact Us</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About Us</a></li>
+                    <li><a href="/news">News</a></li>
+                    <li><a href="/products">Products</a></li>
+                    <li><a href="/contact">Contact Us</a></li>
                 </ul>
                 <div class="header-nav-sub">
-                    <a href="contact-ch.html">中文</a>
+                    <a href="/home-ch">中文</a>
                 </div>
                 <a href="#" class="showmenu"><img src="img/nav-menu.png" alt=""></a>
             </nav>
@@ -88,7 +88,7 @@
 
                         </textarea>
                     </div>
-                    <button class="contact-form-btn" type="button">Submit</button>
+                    <button class="contact-form-btn" type="button" onclick="sendEmail()">Submit</button>
                     
             </form>
            
@@ -140,19 +140,19 @@
                     <div>
                         <p>Products</p>
                         <ul >
-                            <li><a href="products.html#products-vcbs1">VCBS-I</a></li>
-                            <li><a href="products.html#products-vcbs2">VCBS-II</a></li>
-                            <li><a href="products.html#products-hbs2">HBS-2</a></li>
-                            <li><a href="products.html#products-hbs3">HBS-3</a></li>
+                            <li><a href="/produts#products-vcbs1">VCBS-I</a></li>
+                            <li><a href="/produts#products-vcbs2">VCBS-II</a></li>
+                            <li><a href="/produts#products-hbs2">HBS-2</a></li>
+                            <li><a href="/produts#products-hbs3">HBS-3</a></li>
                         </ul>
                     </div>
                     
                     <div>
                         <p>Quick Link</p>
                         <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="news.html">News</a></li>
-                            <li><a href="contact.html">Contact Us</a></li>
+                            <li><a href="/about">About Us</a></li>
+                            <li><a href="/news">News</a></li>
+                            <li><a href="/contact">Contact Us</a></li>
                         </ul>
                     </div>      
                 </div>                  
@@ -164,6 +164,8 @@
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <!-- 22-1019引入寄信js -->
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="all.js"></script>
     
 </body>
