@@ -11,9 +11,9 @@ showmenu.addEventListener('click',function(){
 
 function sendEmail(){
     Email.send({
-        SecureToken : "af9f143a-aa7b-4ebd-a67a-e36c5def447f",
-        To : 'lovebian1103@gmail.com',
-        From : "UMAX<smallg1015@gmail.com>",
+        SecureToken : "b49c24d6-9197-4444-9eb9-208333aa0523",
+        To : 'smallg1015@gmail.com',
+        From : "UMAX<umax@umax.tw>",
         Subject : "This is the subject",
         Body : "And this is the body"
     }).then(

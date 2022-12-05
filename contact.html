@@ -167,6 +167,21 @@
     <!-- 22-1019引入寄信js -->
     <script src="https://smtpjs.com/v3/smtp.js"></script>
     <script type="text/javascript" src="all.js"></script>
+    <script>
+
+        
+        function sendEmail(){
+       Email.send({
+        SecureToken : "b49c24d6-9197-4444-9eb9-208333aa0523",
+        To : 'smallg1015@gmail.com',
+        From : "UMAX<umax@umax.tw>",
+        Subject : "This is the subject",
+        Body : "And this is the body"
+    }).then(
+      message => alert(message)
+    );
+}
+    </script>
     
 </body>
 </html>
