@@ -67,7 +67,7 @@
                     </div>
                     <div class="product-diagram-content">
                         <h4 class="product-name">VCBS-I</h4>
-                        <p class="product-intro font-text"><strong>Variable Combined Braking System Type I:</strong><br>An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
+                        <p class="product-intro font-text"><strong>Variable Combined Braking System <br>Type I:</strong><br>An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
                     </div>
                 </div>
               </section>
@@ -228,7 +228,7 @@
                           </div>
                           <div class="product-diagram-content">
                               <h4 class="product-name">VCBS-II</h4>
-                              <p class="product-intro font-text"><strong>Variable Combined Braking System Type II:</strong><br>An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
+                              <p class="product-intro font-text"><strong>Variable Combined Braking System <br>Type II:</strong><br>An innovation CBS product provides customized  optimal brake force distribution ratio to have excellent brake performance.</p>
                           </div>
                       </div>
                     </section>
@@ -536,7 +536,7 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
                   </div>
                   <div class="product-diagram-content">
                       <h4 class="product-name">HBS-3</h4>
-                      <p class="product-intro font-text"><strong>High Performance Combined Braking System for tricycles:</strong><br>An innovative CBS designed for tricycles with disc-disc braking system.  It provides optimized brake force distribution ratio to have excellent brake performance and brake feels.</p>
+                      <p class="product-intro font-text"><strong>High Performance Combined Braking System <br>for tricycles:</strong><br>An innovative CBS designed for tricycles with disc-disc braking system.  It provides optimized brake force distribution ratio to have excellent brake performance and brake feels.</p>
                   </div>
               </div>
             </section>
@@ -549,7 +549,7 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
                 </div>
                 <div class="products-module products-inner-padding module-hbs">
                   <div class="module-content">
-                      <h2 class="font-section-title sm-align-center">HBS module</h2>
+                      <h2 class="font-section-title sm-align-center">Module</h2>
                       <p class="font-text sm-align-center">When the right handle is pressed, the right total mercury oil pressure independently controls the front wheel calipers.</p>
                   </div>
                   <div class="module-img">
@@ -610,14 +610,14 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
             </section>
             <div class="products-bevel-featuresTospecification"></div>
             <section class="products-specification">
-              <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+              <h2 class="font-section-title sm-align-center">Specification</h2>
               <picture>
               <source media="(min-width:1025px)" srcset="img/pc_products_specification_hbs.png" >
               <source media="(min-width:768px)" srcset="img/tb_products_specification_hbs.png" >
               <img src="img/mob_products_specification_hbs.png" alt="">
               </picture>
               <div>
-                  <h2 class="font-section-title sm-align-center">VCBS-I-Specification</h2>
+                  <h2 class="font-section-title sm-align-center">Specification</h2>
                   <table class="font-text products-specification-table">
                       <tbody>
                         <tr>
@@ -701,11 +701,11 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
                 <div class="footer-menu-wrap">
                     <div>
                         <p>Products</p>
-                        <ul >
-                            <li><a href="/produts#products-vcbs1">VCBS-I</a></li>
-                            <li><a href="/produts#products-vcbs2">VCBS-II</a></li>
-                            <li><a href="/produts#products-hbs2">HBS-2</a></li>
-                            <li><a href="/produts#products-hbs3">HBS-3</a></li>
+                        <ul class="footer_products_menu">
+                            <li><a href="#products-vcbs1">VCBS-I</a></li>
+                            <li><a href="#products-vcbs2">VCBS-II</a></li>
+                            <li><a href="#products-hbs2">HBS-2</a></li>
+                            <li><a href="#products-hbs3">HBS-3</a></li>
                         </ul>
                     </div>
                     
@@ -734,7 +734,7 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
             let pathname = window.location.href;
             all_submenu_item.forEach(function(item){
                         item.classList.remove('active');
-             });
+            });
             products_wrap_item.forEach(function(item,i){
                 item.setAttribute('style','display: none');
 
@@ -781,6 +781,8 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
                 });
             }
 
+
+            /*產品選單動作*/
             products_wrap_item.forEach(function(wrap_item,i){
             let submenu_item = wrap_item.querySelectorAll('.product-sub-menu li');
             submenu_item.forEach(function(menu_item,menu_i){
@@ -801,7 +803,31 @@ PDCV is a pressure distribution control valve, which is the core of HBS. It can 
             })
             })
 
+            /*footer產品選單動作*/
+            let footer_productsMenuItem = document.querySelectorAll('.footer_products_menu li a');
+            footer_productsMenuItem.forEach(function(menu_item,menu_i){
+              menu_item.addEventListener('click',function(e){
+                    /*產品選單樣式去除*/
+                    all_submenu_item.forEach(function(item){
+                        item.classList.remove('active');
+                    })
+                    products_wrap_item.forEach(function(item,i){
+                        item.setAttribute('style','display: none');
+                        let submenu_item_sub = item.querySelectorAll('.product-sub-menu li');
+                        submenu_item_sub[menu_i].classList.add('active');
+
+                    })
+                    products_wrap_item[menu_i].setAttribute('style','display: block');
+                  })
             });
+
+
+
+          });
+
+            
+
+            
             
            
         </script>

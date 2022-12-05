@@ -744,7 +744,7 @@ body {
 }
 
 .home-product .product-diagram .product-diagram-content .product-intro strong {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -873,7 +873,7 @@ body {
     margin-top: 8px;
   }
   .home-product .product-diagram .product-diagram-content .product-intro strong {
-    font-size: 18px;
+    font-size: 16px;
   }
   .home-product .product-diagram .product-diagram-content .product-link {
     margin-top: 35px;
@@ -1454,6 +1454,7 @@ body {
   position: relative;
   z-index: 2;
   margin-left: 21.716021%;
+  margin-right: 10%;
 }
 
 .about-story .about-story-wrap p {
@@ -1466,6 +1467,7 @@ body {
   }
   .about-story .about-story-wrap {
     margin-left: 0;
+    margin-right: 0;
   }
   .about-story .about-story-wrap h2, .about-story .about-story-wrap p {
     text-align: center;
@@ -1713,7 +1715,7 @@ body {
   }
   .about-history .history-list li {
     width: 100%;
-    height: 25%;
+    height: 20%;
   }
   .about-history .history-list .history-line {
     right: auto;
@@ -1750,7 +1752,7 @@ body {
             animation-duration: 1.5s;
   }
   .about-history .history-list li:last-child .history-year {
-    top: -275px;
+    top: -160px;
   }
   .about-history .history-list .history-intro {
     width: 85%;
@@ -1816,6 +1818,7 @@ body {
 
 .about-more .button-more {
   margin-top: 32px;
+  margin-right: 10px;
 }
 
 @media (max-width: 1024px) {
@@ -2839,7 +2842,7 @@ body {
 }
 
 .products-menu .product-diagram .product-diagram-content .product-intro strong {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: bold;
 }
 
@@ -2967,7 +2970,7 @@ body {
     margin-top: 8px;
   }
   .products-menu .product-diagram .product-diagram-content .product-intro strong {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 

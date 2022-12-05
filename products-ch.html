@@ -730,11 +730,11 @@
                     <div class="footer-menu-wrap">
                         <div>
                             <p>產品</p>
-                            <ul >
-                                <li><a href="products-ch.html#products-vcbs1">VCBS-I</a></li>
-                                <li><a href="products-ch.html#products-vcbs2">VCBS-II</a></li>
-                                <li><a href="products-ch.html#products-hbs2">HBS-2</a></li>
-                                <li><a href="products-ch.html#products-hbs3">HBS-3</a></li>
+                            <ul class="footer_products_menu">
+                                <li><a href="#products-vcbs1">VCBS-I</a></li>
+                                <li><a href="#products-vcbs2">VCBS-II</a></li>
+                                <li><a href="#products-hbs2">HBS-2</a></li>
+                                <li><a href="#products-hbs3">HBS-3</a></li>
                             </ul>
                         </div>
                         
@@ -757,7 +757,6 @@
         <script type="text/javascript" src="all.js"></script>
         <script>
             $(document).ready(function(){
-            
             let products_wrap_item = document.querySelectorAll('.products-wrap');
             let all_submenu_item = document.querySelectorAll('.product-sub-menu li');
             let pathname = window.location.href;
@@ -829,6 +828,27 @@
                 })
             })
             })
+
+            
+
+            /*footer產品選單動作*/
+            let footer_productsMenuItem = document.querySelectorAll('.footer_products_menu li a');
+            footer_productsMenuItem.forEach(function(menu_item,menu_i){
+              menu_item.addEventListener('click',function(e){
+                    /*產品選單樣式去除*/
+                    all_submenu_item.forEach(function(item){
+                        item.classList.remove('active');
+                    })
+                    products_wrap_item.forEach(function(item,i){
+                        item.setAttribute('style','display: none');
+                        let submenu_item_sub = item.querySelectorAll('.product-sub-menu li');
+                        submenu_item_sub[menu_i].classList.add('active');
+
+                    })
+                    products_wrap_item[menu_i].setAttribute('style','display: block');
+                  })
+            });
+            
 
             });
             
