@@ -2226,6 +2226,7 @@ body {
   line-height: 26px;
   letter-spacing: 0.025em;
   text-align: left;
+  margin-top: 10px;
 }
 
 .article-main .news-article .news-item-attribute {
