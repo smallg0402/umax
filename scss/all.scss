@@ -1464,6 +1464,11 @@ body{
     
     @media (max-width: 767px){
         padding-bottom: 90px;
+        .history-list{
+            li:last-child .history-year{
+                top: -210px;
+            }
+        }
     }
 }
 .about-bevel-storyTomore{

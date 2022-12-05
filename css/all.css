@@ -1781,6 +1781,9 @@ body {
   .about-history {
     padding-bottom: 90px;
   }
+  .about-history .history-list li:last-child .history-year {
+    top: -210px;
+  }
 }
 
 .about-bevel-storyTomore {
