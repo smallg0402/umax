@@ -9,16 +9,6 @@ showmenu.addEventListener('click',function(){
     }
 })
 
-function sendEmail(){
-    Email.send({
-        SecureToken : "b49c24d6-9197-4444-9eb9-208333aa0523",
-        To : 'smallg1015@gmail.com',
-        From : "UMAX<umax@umax.tw>",
-        Subject : "This is the subject",
-        Body : "And this is the body"
-    }).then(
-      message => alert(message)
-    );
-}
+
 
 
