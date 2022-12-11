@@ -93,7 +93,7 @@ body{
     line-height: 45px;
     }
     @media (max-width: 767px){
-        font-size: 28px;
+        font-size: 24px;
         line-height: 39px;
     }
 }
@@ -206,12 +206,12 @@ body{
             @media (max-width: 767px){
                h5{
                 white-space:normal ;
-                font-size: 32px;
+                font-size: 26px;
                 line-height: 36.8px;
                }
                p{
                 width: 100%;
-                font-size: 18px;
+                font-size: 16px;
                 line-height: 25.5px;
                }
            }
@@ -283,14 +283,14 @@ body{
     }
 
     @media (max-width:767px){
-        font-size: 40px;
+        font-size: 36px;
         line-height: 46px;
         margin-top: -50px;
         .slogan-block-wrap{
             height: 82px;
             bottom: 0;
             p{
-                -webkit-text-stroke: 3px #fff;
+                -webkit-text-stroke: 2px #fff;
                 -webkit-text-fill-color: transparent;
                 text-shadow: none;
                 
@@ -636,8 +636,11 @@ body{
                 margin-bottom: 0;
                 margin-left: 0;
                 .product-name{
-                  font-size: 32px;
-                  line-height: 45px;
+                    a{
+                        font-size: 32px;
+                        line-height: 45px;
+                    }
+                  
                 }
                 
                 
@@ -683,8 +686,11 @@ body{
                 margin-bottom: 0;
                 margin-left: 0;
                 .product-name{
-                  font-size: 32px;
-                  line-height: 45px;
+                    a{
+                        font-size: 28px;
+                        line-height: 38px;
+                    }
+                
                 }
                 .product-intro{
                     margin-top: 8px;
@@ -837,7 +843,7 @@ body{
     .about-slogan{
         
         font-family: 'Arial Black';
-        -webkit-text-stroke: 3px #fff;
+        -webkit-text-stroke: 2px #fff;
         -webkit-text-fill-color: transparent;
         text-align: right; 
         font-size: 52px;
@@ -879,7 +885,7 @@ body{
         }
         .about-slogan{
             width: 299px;
-            font-size: 28px;
+            font-size: 24px;
             line-height: 39.48px;
         }
     }
@@ -1075,7 +1081,7 @@ body{
         }
         
         .about-banner-slogan{
-            font-size: 48px;
+            font-size: 36px;
             line-height: 55px;
         }
         .about-banner-intro{
@@ -1083,7 +1089,7 @@ body{
             max-width: 100%;
             margin-top: 25px;
             h1{
-                font-size: 28px;
+                font-size: 24px;
                 line-height: 39px;
             }
             
@@ -1467,6 +1473,13 @@ body{
         .history-list{
             li:last-child .history-year{
                 top: -210px;
+            }
+            .history-intro{
+                span{
+                    font-size: 22px;
+                    line-height: 26px;
+                }
+                
             }
         }
     }
@@ -2014,7 +2027,7 @@ backdrop-filter: blur(4px);
 .font-contact-info{
 margin-top: 16px;
   font-family: 'Arial Black';
-  font-size: 52px;
+  font-size: 36px;
   font-weight: 900;
   line-height: 73px;
   letter-spacing: -0.015em;
@@ -2034,7 +2047,7 @@ margin-top: 16px;
     >div:not(:first-child){
         margin-top: 20px;
     }
-    margin-top: 32px;
+    margin-top: 52px;
     width: 100%;
     label{
         display: block;
@@ -2147,7 +2160,7 @@ margin-top: 16px;
     line-height: 110px;
     letter-spacing: -0.04em;
     -webkit-text-stroke: 3px #fff;
-            -webkit-text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
     text-align: right;
     p:nth-child(2){
         margin-right: 86px;
@@ -2161,7 +2174,9 @@ margin-top: 16px;
         
     }
     @media (max-width: 767px){
-        font-size: 40px;
+        
+        font-size: 32px;
+        -webkit-text-stroke: 1px #fff;
         line-height: 46px;
     }
 }
@@ -2274,7 +2289,7 @@ margin-top: 16px;
         }
         
         .products-banner-slogan{
-            font-size: 48px;
+            font-size: 36px;
             line-height: 55px;
         }
         .products-banner-intro{

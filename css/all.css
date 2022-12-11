@@ -125,7 +125,7 @@ body {
 
 @media (max-width: 767px) {
   .font-section-title {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 39px;
   }
 }
@@ -261,12 +261,12 @@ body {
 @media (max-width: 767px) {
   .home-banner .home-banner-content .carousel-caption h5 {
     white-space: normal;
-    font-size: 32px;
+    font-size: 26px;
     line-height: 36.8px;
   }
   .home-banner .home-banner-content .carousel-caption p {
     width: 100%;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 25.5px;
   }
 }
@@ -333,7 +333,7 @@ body {
 
 @media (max-width: 767px) {
   .slogan-block {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 46px;
     margin-top: -50px;
   }
@@ -342,7 +342,7 @@ body {
     bottom: 0;
   }
   .slogan-block .slogan-block-wrap p {
-    -webkit-text-stroke: 3px #fff;
+    -webkit-text-stroke: 2px #fff;
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
@@ -811,7 +811,7 @@ body {
     margin-bottom: 0;
     margin-left: 0;
   }
-  .home-product .product-diagram .product-diagram-content .product-name {
+  .home-product .product-diagram .product-diagram-content .product-name a {
     font-size: 32px;
     line-height: 45px;
   }
@@ -865,9 +865,9 @@ body {
     margin-bottom: 0;
     margin-left: 0;
   }
-  .home-product .product-diagram .product-diagram-content .product-name {
-    font-size: 32px;
-    line-height: 45px;
+  .home-product .product-diagram .product-diagram-content .product-name a {
+    font-size: 28px;
+    line-height: 38px;
   }
   .home-product .product-diagram .product-diagram-content .product-intro {
     margin-top: 8px;
@@ -1051,7 +1051,7 @@ body {
 
 .home-about .about-slogan {
   font-family: 'Arial Black';
-  -webkit-text-stroke: 3px #fff;
+  -webkit-text-stroke: 2px #fff;
   -webkit-text-fill-color: transparent;
   text-align: right;
   font-size: 52px;
@@ -1102,7 +1102,7 @@ body {
   }
   .home-about .about-slogan {
     width: 299px;
-    font-size: 28px;
+    font-size: 24px;
     line-height: 39.48px;
   }
 }
@@ -1342,7 +1342,7 @@ body {
     background-image: url("../img/mob_about_banner_bg.png");
   }
   .about-banner .about-banner-slogan {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 55px;
   }
   .about-banner .about-banner-intro {
@@ -1351,7 +1351,7 @@ body {
     margin-top: 25px;
   }
   .about-banner .about-banner-intro h1 {
-    font-size: 28px;
+    font-size: 24px;
     line-height: 39px;
   }
 }
@@ -1783,6 +1783,10 @@ body {
   }
   .about-history .history-list li:last-child .history-year {
     top: -210px;
+  }
+  .about-history .history-list .history-intro span {
+    font-size: 22px;
+    line-height: 26px;
   }
 }
 
@@ -2349,7 +2353,7 @@ body {
 .font-contact-info {
   margin-top: 16px;
   font-family: 'Arial Black';
-  font-size: 52px;
+  font-size: 36px;
   font-weight: 900;
   line-height: 73px;
   letter-spacing: -0.015em;
@@ -2370,7 +2374,7 @@ body {
 }
 
 .contact-form {
-  margin-top: 32px;
+  margin-top: 52px;
   width: 100%;
 }
 
@@ -2513,7 +2517,8 @@ body {
 
 @media (max-width: 767px) {
   .contact-slogan-block {
-    font-size: 40px;
+    font-size: 32px;
+    -webkit-text-stroke: 1px #fff;
     line-height: 46px;
   }
 }
@@ -2648,7 +2653,7 @@ body {
     background-image: url("../img/mob_products_banner_bg.png");
   }
   .products-banner .products-banner-slogan {
-    font-size: 48px;
+    font-size: 36px;
     line-height: 55px;
   }
   .products-banner .products-banner-intro {
