@@ -1104,6 +1104,7 @@ body {
     width: 299px;
     font-size: 24px;
     line-height: 39.48px;
+    -webkit-text-stroke: 1px #fff;
   }
 }
 
@@ -1344,6 +1345,7 @@ body {
   .about-banner .about-banner-slogan {
     font-size: 36px;
     line-height: 55px;
+    -webkit-text-stroke: 1.5px #fff;
   }
   .about-banner .about-banner-intro {
     width: 100%;
@@ -2655,6 +2657,7 @@ body {
   .products-banner .products-banner-slogan {
     font-size: 36px;
     line-height: 55px;
+    -webkit-text-stroke: 1.5px #fff;
   }
   .products-banner .products-banner-intro {
     width: 100%;
@@ -2972,8 +2975,8 @@ body {
     margin-left: 0;
   }
   .products-menu .product-diagram .product-diagram-content .product-name {
-    font-size: 32px;
-    line-height: 45px;
+    font-size: 28px;
+    line-height: 38px;
   }
   .products-menu .product-diagram .product-diagram-content .product-intro {
     margin-top: 8px;
@@ -3318,6 +3321,17 @@ body {
   font-size: 24px;
   font-weight: 700;
   line-height: 28px;
+}
+
+@media (max-width: 767px) {
+  .font-description-title {
+    font-size: 32px;
+    line-height: 48px;
+  }
+  .font-description-title span {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .products-bevel-moduleTofeatures {
