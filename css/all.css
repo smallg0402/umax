@@ -1471,7 +1471,7 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
-  .about-story .about-story-wrap h2, .about-story .about-story-wrap p {
+  .about-story .about-story-wrap h2 {
     text-align: center;
   }
 }
@@ -1785,6 +1785,9 @@ body {
   }
   .about-history .history-list li:last-child .history-year {
     top: -210px;
+  }
+  .about-history .history-list li:last-child .history-year.ch {
+    top: -160px;
   }
   .about-history .history-list .history-intro span {
     font-size: 22px;

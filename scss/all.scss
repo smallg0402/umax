@@ -1197,7 +1197,7 @@ body{
         .about-story-wrap{
             margin-left: 0;
             margin-right: 0;
-            h2,p{
+            h2{
                 text-align: center;
             }
         }
@@ -1475,6 +1475,10 @@ body{
         .history-list{
             li:last-child .history-year{
                 top: -210px;
+            }
+            
+            li:last-child .history-year.ch{
+                top: -160px;
             }
             .history-intro{
                 span{
